@@ -1,2 +1,1 @@
-# Python
- 
+# [Dia 1 - Introducción]
