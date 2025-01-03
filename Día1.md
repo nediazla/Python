@@ -314,7 +314,7 @@ Para ejecutar el archivo de Python, consulte la imagen a continuación. Puede ej
 ### Ejercicio: Nivel 3
 
 - Escribe un ejemplo para diferentes tipos de datos de Python, como Número (Entero, Flotante, Complejo), Cadena, Booleano, Lista, Tupla, Conjunto y Diccionario.
-- Encuentra una distancia euclidianaentre (2, 3) y (10, 8)
+- Encuentra una distancia [euclidiana](https://es.wikipedia.org/wiki/Distancia_euclidiana) entre (2, 3) y (10, 8)
     
     
 
