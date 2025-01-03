@@ -16,7 +16,7 @@ Python es utilizado por varias industrias y empresas (incluido Google). Se ha ut
 To run a python script you need to install python. Let's [download](https://www.python.org/) python.
 If your are a windows user. Click the button encircled in red.
 
-![{9D2D8C5D-3333-495D-B417-1EA0567779BB}.png](9D2D8C5D-3333-495D-B417-1EA0567779BB.png)
+![{9D2D8C5D-3333-495D-B417-1EA0567779BB}.png](img/9D2D8C5D-3333-495D-B417-1EA0567779BB.png)
 
 Para comprobar si Python está instalado, escriba el siguiente comando en la terminal de su dispositivo.
 
@@ -24,7 +24,7 @@ Para comprobar si Python está instalado, escriba el siguiente comando en la ter
 python --version
 ```
 
-![{AF3FF5B2-5AF5-4DA8-904C-EAE22737EF06}.png](AF3FF5B2-5AF5-4DA8-904C-EAE22737EF06.png)
+![{AF3FF5B2-5AF5-4DA8-904C-EAE22737EF06}.png](img/AF3FF5B2-5AF5-4DA8-904C-EAE22737EF06.png)
 
 ### Python Shell
 
@@ -37,29 +37,29 @@ Abra su terminal o símbolo del sistema (cmd) y escriba:
 python
 ```
 
-![{8CD9AE8A-04FF-4B3D-AA9C-8A13FD72004B}.png](8CD9AE8A-04FF-4B3D-AA9C-8A13FD72004B.png)
+![{8CD9AE8A-04FF-4B3D-AA9C-8A13FD72004B}.png](img/8CD9AE8A-04FF-4B3D-AA9C-8A13FD72004B.png)
 
 Se abre el shell interactivo de Python y está esperando que escribas el código de Python (script de Python). Escribirás tu script de Python junto a este símbolo >>> y luego harás clic en Enter.
 Escribamos nuestro primer script en el shell de scripts de Python.
 
-![{90ECEF63-39AD-4756-A1C1-8561A8F4767B}.png](90ECEF63-39AD-4756-A1C1-8561A8F4767B.png)
+![{90ECEF63-39AD-4756-A1C1-8561A8F4767B}.png](img/90ECEF63-39AD-4756-A1C1-8561A8F4767B.png)
 
 Bien hecho, escribiste tu primer script de Python en el shell interactivo de Python. ¿Cómo cerramos el shell interactivo de Python?
 Para cerrar el shell, junto a este símbolo >> escribe el comando **exit()** y presiona Enter.
 
-![{57866FC2-0BC0-428B-9E49-C53ECF06A0C0}.png](57866FC2-0BC0-428B-9E49-C53ECF06A0C0.png)
+![{57866FC2-0BC0-428B-9E49-C53ECF06A0C0}.png](img/57866FC2-0BC0-428B-9E49-C53ECF06A0C0.png)
 
 Ahora ya sabes cómo abrir el shell interactivo de Python y cómo salir de él.
 
 Python te dará resultados si escribes scripts que Python entienda; si no, devolverá errores. Cometamos un error deliberado y veamos qué devolverá Python.
 
-![{069D54D4-625F-4543-91C1-C247314F63BD}.png](069D54D4-625F-4543-91C1-C247314F63BD.png)
+![{069D54D4-625F-4543-91C1-C247314F63BD}.png](img/069D54D4-625F-4543-91C1-C247314F63BD.png)
 
 Como puede ver en el error devuelto, Python es tan inteligente que sabe cuál fue el error que cometimos y que fue *Error de sintaxis: sintaxis no válida*. Usar x como multiplicación en Python es un error de sintaxis porque (x) no es una sintaxis válida en Python. En lugar de (**x**) usamos un asterisco (*) para la multiplicación. El error devuelto muestra claramente qué se debe corregir.
 
 El proceso de identificar y eliminar errores de un programa se llama *depuración*. Depurémoslo colocando * en lugar de **x**.
 
-![{AA1DD864-37ED-4004-80E0-99E2CF710AFA}.png](AA1DD864-37ED-4004-80E0-99E2CF710AFA.png)
+![{AA1DD864-37ED-4004-80E0-99E2CF710AFA}.png](img/AA1DD864-37ED-4004-80E0-99E2CF710AFA.png)
 
 Nuestro error fue corregido, el código se ejecutó y obtuvimos el resultado que esperábamos. Como programador, verás este tipo de errores a diario. Es bueno saber cómo depurar. Para ser bueno en la depuración, debes comprender qué tipo de errores enfrentas. Algunos de los errores de Python que puedes encontrar son *SyntaxError*, *IndexError*, *NameError*, *ModuleNotFoundError*, *KeyError*, *ImportError*, *AttributeError*, *TypeError*, *ValueError*, *ZeroDivisionError*, etc. Veremos más sobre los diferentes ***tipos de errores*** de Python en secciones posteriores.
 
@@ -90,7 +90,7 @@ Así es como se escribe un comentario en Python
  # this is a python comment, because it starts with a (#) symbol
 ```
 
-![{88EE667E-1247-447D-9D3A-ECA8B6936D35}.png](88EE667E-1247-447D-9D3A-ECA8B6936D35.png)
+![{88EE667E-1247-447D-9D3A-ECA8B6936D35}.png](img/88EE667E-1247-447D-9D3A-ECA8B6936D35.png)
 
 Antes de pasar a la siguiente sección, practiquemos más en el shell interactivo de Python. Cierre el shell abierto escribiendo *exit()* en el shell y ábralo nuevamente y practiquemos cómo escribir texto en el shell de Python.
 
@@ -104,7 +104,7 @@ Un script de Python se puede escribir en el shell interactivo de Python o en el 
 
 Una sangría es un espacio en blanco en un texto. La sangría en muchos lenguajes se utiliza para aumentar la legibilidad del código; sin embargo, Python utiliza la sangría para crear bloques de código. En otros lenguajes de programación, se utilizan llaves para crear bloques de código en lugar de sangría. Uno de los errores comunes al escribir código Python es la sangría incorrecta.
 
-![{15C00285-762D-4550-B586-02E5FACBE854}.png](15C00285-762D-4550-B586-02E5FACBE854.png)
+![{15C00285-762D-4550-B586-02E5FACBE854}.png](img/15C00285-762D-4550-B586-02E5FACBE854.png)
 
 ### Comentarios
 
@@ -240,7 +240,7 @@ En secciones posteriores, analizaremos en detalle todos y cada uno de los tipos 
 
 Para comprobar el tipo de datos de determinados datos o variables, utilizamos la función **type**. En la siguiente terminal verás diferentes tipos de datos de Python:
 
-![{B1FE31BA-0565-43CA-98B1-4EA0F8C376B7}.png](B1FE31BA-0565-43CA-98B1-4EA0F8C376B7.png)
+![{B1FE31BA-0565-43CA-98B1-4EA0F8C376B7}.png](img/B1FE31BA-0565-43CA-98B1-4EA0F8C376B7.png)
 
 ### Archivo Python
 
@@ -277,7 +277,7 @@ print(type((9.8, 3.14, 2.7))) # Tuple
 
 Para ejecutar el archivo de Python, consulte la imagen a continuación. Puede ejecutar el archivo de Python ya sea ejecutando el botón verde en Visual Studio Code o escribiendo *python [helloworld.py](http://helloworld.py/)* en la terminal.
 
-![{0A28C008-E4B9-4C39-BDCE-2C5AF79AAF61}.png](0A28C008-E4B9-4C39-BDCE-2C5AF79AAF61.png)
+![{0A28C008-E4B9-4C39-BDCE-2C5AF79AAF61}.png](img/0A28C008-E4B9-4C39-BDCE-2C5AF79AAF61.png)
 
 ## 💻 Ejercicios - Día 1
 
