@@ -1,4 +1,4 @@
-# [Dia 1 - Introducción](Dia1)
+# [Dia 1 - Introducción](Dia1.md)
 # Dia 2 -
 # Dia 3 -
 # Dia 4 -
