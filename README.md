@@ -1,4 +1,4 @@
-# [Dia 1 - Introducción](Diaz1)
+# [Dia 1 - Introducción](Dia1)
 # Dia 2 -
 # Dia 3 -
 # Dia 4 -

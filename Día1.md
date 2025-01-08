@@ -55,7 +55,7 @@ Python te dará resultados si escribes scripts que Python entienda; si no, devol
 
 ![{069D54D4-625F-4543-91C1-C247314F63BD}.png](img/069D54D4-625F-4543-91C1-C247314F63BD.png)
 
-Como puede ver en el error devuelto, Python es tan inteligente que sabe cuál fue el error que cometimos y que fue *Error de sintaxis: sintaxis no válida*. Usar x como multiplicación en Python es un error de sintaxis porque (x) no es una sintaxis válida en Python. En lugar de (**x**) usamos un asterisco (*) para la multiplicación. El error devuelto muestra claramente qué se debe corregir.
+Como puede ver en el error devuelto, Python es tan inteligente que sabe cuál fue el error que cometimos y que fue *Error de sintaxis: sintaxis no válida*. Usar x como multiplicación en Python es un error de sintaxis porque (x) no es una sintaxis válida en Python. En lugar de (**x**) usamos un asterisco (\*) para la multiplicación. El error devuelto muestra claramente qué se debe corregir.
 
 El proceso de identificar y eliminar errores de un programa se llama *depuración*. Depurémoslo colocando * en lugar de **x**.
 
@@ -196,14 +196,13 @@ Un objeto de diccionario de Python es una colección desordenada de datos en un 
 
 ```
 {
-'first_name':'Asabeneh',
-'last_name':'Yetayeh',
+'first_name':'Nelson',
+'last_name':'Diaz',
 'country':'Finland',
 'age':250,
 'is_married':True,
 'skills':['JS', 'React', 'Node', 'Python']
 }
-
 ```
 
 ### Tupla
