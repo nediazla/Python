@@ -71,7 +71,7 @@ Cuando asignamos un cierto tipo de datos a una variable, se llama declaración d
 ```python
 # Variables in Python
 first_name = 'Nelson'
-last_name = 'Yetayeh'
+last_name = 'Diaz'
 country = 'España'
 city = 'Caceres'
 age = 250
@@ -154,21 +154,21 @@ Hay varios tipos de datos en Python. Para identificar el tipo de datos, utilizam
 # Different python data types
 # Let's declare variables with various data types
 
-first_name = 'Asabeneh'     # str
-last_name = 'Yetayeh'       # str
-country = 'Finland'         # str
-city= 'Helsinki'            # str
+first_name = 'Nelson'     # str
+last_name = 'Diaz'       # str
+country = 'España'         # str
+city= 'Caceres'            # str
 age = 250                   # int, it is not my real age, don't worry about it
 
 # Printing out types
-print(type('Asabeneh'))          # str
+print(type('Nelson'))          # str
 print(type(first_name))          # str
 print(type(10))                  # int
 print(type(3.14))                # float
 print(type(1 + 1j))              # complex
 print(type(True))                # bool
 print(type([1, 2, 3, 4]))        # list
-print(type({'name':'Asabeneh'})) # dict
+print(type({'name':'Nelson'})) # dict
 print(type((1,2)))               # tuple
 print(type(zip([1,2],[3,4])))    # zip
 ```
@@ -203,7 +203,7 @@ num_int = int(num_float)
 print('num_int', int(num_int))      # 10
 
 # str to list
-first_name = 'Asabeneh'
+first_name = 'Nelson'
 print(first_name)               # 'Asabeneh'
 first_name_to_list = list(first_name)
 print(first_name_to_list)            # ['A', 's', 'a', 'b', 'e', 'n', 'e', 'h']
