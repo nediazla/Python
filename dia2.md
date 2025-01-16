@@ -204,7 +204,7 @@ print('num_int', int(num_int))      # 10
 
 # str to list
 first_name = 'Nelson'
-print(first_name)               # 'Asabeneh'
+print(first_name)               # 'Nelson '
 first_name_to_list = list(first_name)
 print(first_name_to_list)            # ['A', 's', 'a', 'b', 'e', 'n', 'e', 'h']
 ```
@@ -229,7 +229,7 @@ Ejemplo:
 
 ### Ejercicios: Nivel 1
 
-1. Dentro de Clase de Pythoncrea una carpeta llamada day_2. Dentro de esta carpeta crea un archivo llamado [variables.py](http://variables.py/)
+1. Dentro de Clase de Python crea una carpeta llamada day_2. Dentro de esta carpeta crea un archivo llamado [variables.py](http://variables.py/)
 2. Escribe un comentario en Python que diga 'Día 2: Clases de programación en Python'
 3. Declara una variable de nombre y asígnale un valor
 4. Declara una variable de apellido y asígnale un valor
