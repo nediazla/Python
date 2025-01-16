@@ -1,6 +1,6 @@
 # [Dia 1 - Introducción](dia1.md)
 # [Dia 2 - Variables y funciones incorporadas](dia2.md)
-# Dia 3 -
+# [Dia 3 - Operadores](dia3.md)
 # Dia 4 -
 # Dia 5 -
 # Dia 5 -
