@@ -190,8 +190,8 @@ Además del operador de comparación anterior, Python utiliza:
 ```python
 print('1 is 1', 1 is 1)                   # True - because the data values are the same
 print('1 is not 2', 1 is not 2)           # True - because 1 is not 2
-print('A in Asabeneh', 'A' in 'Asabeneh') # True - A found in the string
-print('B in Asabeneh', 'B' in 'Asabeneh') # False - there is no uppercase B
+print('A in Nelson', 'A' in 'Nelson') # True - A found in the string
+print('B in Nelson', 'B' in 'Nelson') # False - there is no uppercase B
 print('coding' in 'coding for all') # True - because coding for all has the word coding
 print('a in an:', 'a' in 'an')      # True
 print('4 is 2 ** 2:', 4 is 2 ** 2)   # True
@@ -246,7 +246,7 @@ The perimeter of the triangle is 12
 1. Calcula la longitud y el ancho de un rectángulo con las instrucciones. Calcula su área (área = longitud x ancho) y perímetro (perímetro = 2 x (longitud + ancho))
 2. Calcula el radio de un círculo con las instrucciones. Calcula el área (área = pi x r x r) y la circunferencia (c = 2 x pi x r) donde pi = 3,14.
 3. Calcula la pendiente, la intersección con el eje x y la intersección con el eje y de y = 2x -2
-4. La pendiente es (m = y2-y1/x2-x1). Encuentra la pendiente y la [distancia euclidiana]([https://en.wikipedia.org/wiki/Euclidean_distance#:~:text=In mathematics%2C the Euclidean distance,being called the Pythagorean distance.)](https://en.wikipedia.org/wiki/Euclidean_distance#:~:text=In%20mathematics%2C%20the%20Euclidean%20distance,being%20called%20the%20Pythagorean%20distance.)) entre el punto (2, 2) y el punto (6, 10)
+4. La pendiente es (m = y2-y1/x2-x1). Encuentra la pendiente y la [distancia euclidiana](https://en.wikipedia.org/wiki/Euclidean_distance#:~:text=In%20mathematics%2C%20the%20Euclidean%20distance,being%20called%20the%20Pythagorean%20distance.) entre el punto (2, 2) y el punto (6, 10)
 5. Compara las pendientes en las tareas 8 y 9.
 6. Calcula el valor de y (y = x^2 + 6x + 9). Intenta usar diferentes valores de x y determina en qué valor de x y será 0.
 7. Encuentra la longitud de 'python' y 'dragon' y haz una afirmación de comparación falsa.
