@@ -266,14 +266,14 @@ Enter rate per hour: 28
 Your weekly earning is 1120
 ```
 
-1. Escriba un script que solicite al usuario que ingrese la cantidad de años. Calcule la cantidad de segundos que puede vivir una persona. Suponga que una persona puede vivir cien años.
+17. Escriba un script que solicite al usuario que ingrese la cantidad de años. Calcule la cantidad de segundos que puede vivir una persona. Suponga que una persona puede vivir cien años.
 
 ```python
 Enter number of years you have lived: 100
 You have lived for 3153600000 seconds.
 ```
 
-1. Escriba un script de Python que muestre la siguiente tabla
+18. Escriba un script de Python que muestre la siguiente tabla
 
 ```python
 1 1 1 1 1
