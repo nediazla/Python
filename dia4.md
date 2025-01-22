@@ -186,7 +186,7 @@ En programación, el conteo comienza desde cero. Por lo tanto, la primera letra 
 
 ![30-Days-Of-Pythonimagesstring_index.png](img/30-Days-Of-Pythonimagesstring_index.png)
 
-String index
+### String index
 
 ```python
 language = 'Python'
