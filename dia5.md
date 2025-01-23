@@ -417,8 +417,6 @@ ages.reverse()
 print(ages) # [24, 25, 24, 26, 25, 24, 19, 22]
 ```
 
-### 
-
 ```python
 # syntaxlst = ['item1', 'item2']
 lst.sort()                # ascendinglst.sort(reverse=True)    # descending
@@ -450,7 +448,7 @@ print(fruits)     # ['orange', 'mango', 'lemon', 'banana']
 
 Para ordenar listas podemos utilizar el método *sort()* o las funciones integradas *sorted()*. El método *sort()* reordena los elementos de la lista en orden ascendente y modifica la lista original. Si un argumento del método *sort()* reverse es igual a true, ordenará la lista en orden descendente.
 
-- sort(): este método modifica la lista original
+- `sort()`: este método modifica la lista original
 
 🌕 Eres diligente y ya has logrado mucho. Acabas de completar los desafíos del día 5 y estás 5 pasos adelante en tu camino hacia la grandeza. Ahora haz algunos ejercicios para tu cerebro y tus músculos.
 
