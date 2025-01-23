@@ -80,7 +80,7 @@ Countries: ['Espana', 'Estonia', 'Denmark', 'Sweden', 'Norway']
 
 Accedemos a cada elemento de una lista mediante su índice. El índice de una lista comienza desde 0. La siguiente imagen muestra claramente dónde comienza el índice.
 
-![30-Days-Of-Pythonimageslist_index.png](30-Days-Of-Pythonimageslist_index.png)
+![30-Days-Of-Pythonimageslist_index.png](img/30-Days-Of-Pythonimageslist_index.png)
 
 ```python
 fruits = ['banana', 'orange', 'mango', 'lemon']
@@ -98,7 +98,7 @@ last_fruit = fruits[last_index]
 
 La indexación negativa significa comenzar desde el final, -1 se refiere al último elemento, -2 se refiere al penúltimo elemento.
 
-![30-Days-Of-Pythonimageslist_negative_indexing.png](30-Days-Of-Pythonimageslist_negative_indexing.png)
+![30-Days-Of-Pythonimageslist_negative_indexing.png](img/30-Days-Of-Pythonimageslist_negative_indexing.png)
 
 List negative indexing
 
