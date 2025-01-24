@@ -84,9 +84,6 @@ print(oracion[36:52])  # 'porque porque porque'
 # Ejercicio 26: Encontrar la posición de la primera ocurrencia de la palabra ‘porque’ en la siguiente oración: ‘No puedes terminar una oración con porque porque porque es una conjunción’
 print(oracion.find('porque'))  # 36
 
-# Ejercicio 27: Cortar (slice) la frase ‘porque porque porque’ de la siguiente oración: ‘No puedes terminar una oración con porque porque porque es una conjunción’
-print(oracion[36:52])  # 'porque porque porque'
-
 # Ejercicio 28: ¿Empieza ‘Coding For All’ con una subcadena *Coding*?
 print(company.startswith('Coding'))  # True
 
@@ -124,3 +121,4 @@ print("8 / 6 = {:.2f}".format(8 / 6))
 print("8 % 6 = {}".format(8 % 6))
 print("8 // 6 = {}".format(8 // 6))
 print("8 ** 6 = {}".format(8 ** 6))
+

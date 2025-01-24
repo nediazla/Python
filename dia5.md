@@ -40,12 +40,12 @@ print(len(empty_list)) # 0
 Lists with initial values. We use *len()* to find the length of a list.
 
 ```python
-fruits = ['banana', 'orange', 'mango', 'lemon'] # list of fruits
-vegetables = ['Tomato', 'Potato', 'Cabbage','Onion', 'Carrot'] # list of vegetables
-animal_products = ['milk', 'meat', 'butter', 'yoghurt'] # list of animal 
-productsweb_techs = ['HTML', 'CSS', 'JS', 'React','Redux', 'Node', 'MongDB'] # list of web technologies
+fruits = ['banana', 'orange', 'mango', 'lemon'] 
+vegetables = ['Tomato', 'Potato', 'Cabbage','Onion', 'Carrot'] 
+animal_products = ['milk', 'meat', 'butter', 'yoghurt']  
+productsweb_techs = ['HTML', 'CSS', 'JS', 'React','Redux', 'Node', 'MongDB'] 
 countries = ['Espana', 'Estonia', 'Denmark', 'Sweden', 'Norway']
-# Print the lists and its lengthprint('Fruits:', fruits)
+
 print('Number of fruits:', len(fruits))
 print('Vegetables:', vegetables)
 print('Number of vegetables:', len(vegetables))
@@ -111,7 +111,6 @@ print(first_fruit)      # banana
 print(last_fruit)       # lemon
 print(second_last)      # mango
 ```
-
 ### Desempaquetando elementos de la lista
 
 ```python
@@ -511,3 +510,5 @@ ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
 3. [‘China’, ‘Rusia’, ‘EE. UU.’, ‘España’, ‘Suecia’, ‘Noruega’, ‘Dinamarca’]. Desglosa los tres primeros países y el resto como países escandinavos.
 
 🎉 ¡FELICIDADES! 🎉
+
+[Clase](https://youtu.be/21h5XtHED14)
