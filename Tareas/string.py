@@ -1,140 +1,126 @@
-# Ejercicio 1: Declarar edad como una variable entera
-edad = 25  # Declaración de variable entera
-print("Mi edad es:", edad)
+# Ejercicio 1: Concatenar las cadenas 'Class', 'Of', 'Python' en una sola cadena 'clases de python'
+cadena1 = 'Class' + ' ' + 'Of' + ' ' + 'Python'
+print(cadena1.lower())  # 'clases de python'
 
-# Ejercicio 2: Declarar altura como una variable de punto flotante
-altura = 1.75  # Declaración de variable flotante
-print("Mi altura es:", altura, "metros")
+# Ejercicio 2: Concatenar las cadenas 'Coding', 'For', 'All' en una sola cadena 'Coding For All'
+cadena2 = 'Coding' + ' ' + 'For' + ' ' + 'All'
+print(cadena2)
 
-# Ejercicio 3: Declarar una variable que almacene un número complejo
-numero_complejo = 3 + 4j  # Número complejo
-print("Mi número complejo es:", numero_complejo)
+# Ejercicio 3: Declarar una variable llamada company y asignarle el valor inicial "Coding For All"
+company = "Coding For All"
 
-# Ejercicio 4: Calcular el área de un triángulo
-# Solicitar al usuario la base y altura del triángulo
-base = float(input("Enter base: "))
-altura = float(input("Enter height: "))
-area_triangulo = 0.5 * base * altura  # Fórmula para calcular el área
-print("The area of the triangle is", area_triangulo)
+# Ejercicio 4: Imprimir la variable company utilizando *print()*
+print(company)
 
-# Ejercicio 5: Calcular el perímetro de un triángulo
-# Solicitar al usuario los tres lados del triángulo
-a = float(input("Enter side a: "))
-b = float(input("Enter side b: "))
-c = float(input("Enter side c: "))
-perimetro_triangulo = a + b + c  # Fórmula para calcular el perímetro
-print("The perimeter of the triangle is", perimetro_triangulo)
+# Ejercicio 5: Imprimir la longitud de la cadena company utilizando el método *len()* y *print()*
+print(len(company))
 
-# Ejercicio 6: Calcular el área y perímetro de un rectángulo
-longitud = float(input("Enter length of the rectangle: "))
-ancho = float(input("Enter width of the rectangle: "))
-area_rectangulo = longitud * ancho  # Fórmula del área
-perimetro_rectangulo = 2 * (longitud + ancho)  # Fórmula del perímetro
-print("The area of the rectangle is", area_rectangulo)
-print("The perimeter of the rectangle is", perimetro_rectangulo)
+# Ejercicio 6: Cambiar todos los caracteres a mayúsculas utilizando el método *upper()*
+print(company.upper())
 
-# Ejercicio 7: Calcular el área y circunferencia de un círculo
-radio = float(input("Enter radius of the circle: "))
-area_circulo = 3.14 * radio * radio  # Fórmula del área
-circunferencia_circulo = 2 * 3.14 * radio  # Fórmula de la circunferencia
-print("The area of the circle is", area_circulo)
-print("The circumference of the circle is", circunferencia_circulo)
+# Ejercicio 7: Cambiar todos los caracteres a minúsculas utilizando el método *lower()*
+print(company.lower())
 
-# Ejercicio 8: Calcular pendiente, intersección con el eje x y eje y de y = 2x - 2
-# La pendiente es el coeficiente de x (en este caso 2)
-pendiente = 2  # Pendiente de la recta
-interseccion_y = -2  # Intersección con el eje y
-interseccion_x = 2  # Intersección con el eje x
-print("The slope is", pendiente)
-print("The x-intercept is", interseccion_x)
-print("The y-intercept is", interseccion_y)
+# Ejercicio 8: Usar los métodos capitalize(), title(), swapcase() para dar formato al valor de la cadena *Coding For All*
+print(company.capitalize())  # 'Coding for all'
+print(company.title())  # 'Coding For All'
+print(company.swapcase())  # 'cODING fOR aLL'
 
-# Ejercicio 9: Calcular la pendiente y la distancia euclidiana entre dos puntos
-# Fórmulas de la pendiente y distancia euclidiana
-punto1_x = 2
-punto1_y = 2
-punto2_x = 6
-punto2_y = 10
-pendiente_puntos = (punto2_y - punto1_y) / (punto2_x - punto1_x)  # Fórmula de la pendiente
-distancia_euclidiana = ((punto2_x - punto1_x)**2 + (punto2_y - punto1_y)**2)**0.5  # Fórmula de la distancia euclidiana
-print("The slope between the points is", pendiente_puntos)
-print("The Euclidean distance between the points is", distancia_euclidiana)
+# Ejercicio 9: Cortar (slice) la primera palabra de la cadena *Coding For All*
+print(company[0:6])  # 'Coding'
 
-# Ejercicio 10: Comparar pendientes
-pendiente_1 = 2
-pendiente_2 = pendiente_puntos
-print("Are the slopes equal?", pendiente_1 == pendiente_2)
+# Ejercicio 10: Verificar si la cadena *Coding For All* contiene la palabra Coding usando el método index, find u otros métodos.
+print(company.find('Coding'))  # 0 (posición inicial de "Coding")
 
-# Ejercicio 11: Calcular el valor de y para diferentes valores de x en y = x^2 + 6x + 9
-x_0 = 0
-x_1 = 1
-x_2 = -1
-x_3 = 2
-x_4 = -2
+# Ejercicio 11: Reemplazar la palabra coding en la cadena ‘Coding For All’ por Python.
+print(company.replace('Coding', 'Python'))  # 'Python For All'
 
-# Calculamos los valores de y
-y_0 = x_0**2 + 6*x_0 + 9
-y_1 = x_1**2 + 6*x_1 + 9
-y_2 = x_2**2 + 6*x_2 + 9
-y_3 = x_3**2 + 6*x_3 + 9
-y_4 = x_4**2 + 6*x_4 + 9
+# Ejercicio 12: Cambiar Python for Everyone a Python for All utilizando el método replace u otros métodos.
+cadena3 = 'Python for Everyone'
+print(cadena3.replace('Everyone', 'All'))  # 'Python for All'
 
-print("For x = 0, y =", y_0)
-print("For x = 1, y =", y_1)
-print("For x = -1, y =", y_2)
-print("For x = 2, y =", y_3)
-print("For x = -2, y =", y_4)
+# Ejercicio 13: Dividir la cadena ‘Coding For All’ usando el espacio como separador (split()).
+print(company.split())  # ['Coding', 'For', 'All']
 
-# Ejercicio 12: Longitud de 'python' y 'dragon', y afirmación falsa
-longitud_python = len("python")
-longitud_dragon = len("dragon")
-print("Longitud de 'python':", longitud_python)
-print("Longitud de 'dragon':", longitud_dragon)
-print("Is the length of 'python' equal to the length of 'dragon'?", longitud_python == longitud_dragon)
+# Ejercicio 14: “Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon” dividir la cadena en la coma.
+cadena4 = "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon"
+print(cadena4.split(', '))  # ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
 
-# Ejercicio 13: Comprobar si 'on' está en 'python' y 'dragon' con operador and
-print("Is 'on' in 'python' and 'dragon'?", 'on' in "python" and 'on' in "dragon")
+# Ejercicio 15: ¿Cuál es el carácter en el índice 0 de la cadena *Coding For All*?
+print(company[0])  # 'C'
 
-# Ejercicio 14: Comprobar si 'jargon' está en la oración
-oracion = "Espero que este curso no esté lleno de jerga"
-print("Is 'jargon' in the sentence?", 'jargon' in oracion)
+# Ejercicio 16: ¿Cuál es el último índice de la cadena *Coding For All*?
+print(len(company) - 1)  # 14
 
-# Ejercicio 15: Longitud de 'python', convertir a float y luego a string
-longitud_python_float = float(longitud_python)
-longitud_python_str = str(longitud_python_float)
-print("Longitud de 'python' convertida a string:", longitud_python_str)
+# Ejercicio 17: ¿Qué carácter está en el índice 10 de la cadena “Coding For All”?
+print(company[10])  # 'A'
 
-# Ejercicio 16: Comprobar si un número es par
-numero = 4
-es_par = numero % 2 == 0
-print("Es", numero, "par?", es_par)
+# Ejercicio 18: Crear un acrónimo o abreviatura para el nombre ‘Python For Everyone’.
+print(''.join([word[0] for word in 'Python For Everyone'.split()]))  # 'PFE'
 
-# Ejercicio 17: Comparar la división de piso de 7 por 3 con el valor entero de 2.7
-div_piso = 7 // 3
-valor_entero = int(2.7)
-print("Is the floor division of 7 by 3 equal to int(2.7)?", div_piso == valor_entero)
+# Ejercicio 19: Crear un acrónimo o abreviatura para el nombre ‘Coding For All’.
+print(''.join([word[0] for word in 'Coding For All'.split()]))  # 'CFA'
 
-# Ejercicio 18: Comparar el tipo de '10' con el tipo de 10
-print("Is type of '10' equal to type of 10?", type("10") == type(10))
+# Ejercicio 20: Usar index para determinar la posición de la primera ocurrencia de C en Coding For All.
+print(company.index('C'))  # 0
 
-# Ejercicio 19: Comprobar si int('9.8') es igual a 10
-print("Is int('9.8') equal to 10?", int(9.8) == 10)
+# Ejercicio 21: Usar index para determinar la posición de la primera ocurrencia de F en Coding For All.
+print(company.index('F'))  # 7
 
-# Ejercicio 20: Calcular salario semanal de una persona
-horas = float(input("Enter hours: "))
-tarifa = float(input("Enter rate per hour: "))
-salario = horas * tarifa  # Cálculo del salario
-print("Your weekly earning is", salario)
+# Ejercicio 22: Usar rfind para determinar la posición de la última ocurrencia de l en Coding For All People.
+company2 = "Coding For All People"
+print(company2.rfind('l'))  # 13
 
-# Ejercicio 21: Calcular la cantidad de segundos vividos
-años_vividos = float(input("Enter number of years you have lived: "))
-segundos_vividos = años_vividos * 365 * 24 * 60 * 60  # Conversión de años a segundos
-print("You have lived for", segundos_vividos, "seconds.")
+# Ejercicio 23: Usar index o find para encontrar la posición de la primera ocurrencia de la palabra ‘because’ en la siguiente oración: ‘No puedes terminar una oración con porque porque porque es una conjunción’
+oracion = 'No puedes terminar una oración con porque porque porque es una conjunción'
+print(oracion.find('porque'))  # 36
 
-# Ejercicio 22: Imprimir una tabla con valores
-# En lugar de usar un bucle, lo haremos manualmente
-print("1 1 1 1 1")
-print("2 1 2 4 8")
-print("3 1 3 9 27")
-print("4 1 4 16 64")
-print("5 1 5 25 125")
+# Ejercicio 24: Usar rindex para encontrar la posición de la última ocurrencia de la palabra because en la siguiente oración: ‘No puedes terminar una oración con porque porque porque es una conjunción’
+print(oracion.rfind('porque'))  # 52
+
+# Ejercicio 25: Cortar (slice) la frase ‘porque porque porque’ de la siguiente oración: ‘No puedes terminar una oración con porque porque porque es una conjunción’
+print(oracion[36:52])  # 'porque porque porque'
+
+# Ejercicio 26: Encontrar la posición de la primera ocurrencia de la palabra ‘porque’ en la siguiente oración: ‘No puedes terminar una oración con porque porque porque es una conjunción’
+print(oracion.find('porque'))  # 36
+
+# Ejercicio 27: Cortar (slice) la frase ‘porque porque porque’ de la siguiente oración: ‘No puedes terminar una oración con porque porque porque es una conjunción’
+print(oracion[36:52])  # 'porque porque porque'
+
+# Ejercicio 28: ¿Empieza ‘Coding For All’ con una subcadena *Coding*?
+print(company.startswith('Coding'))  # True
+
+# Ejercicio 29: ¿Termina ‘Coding For All’ con una subcadena *coding*?
+print(company.endswith('coding'))  # False
+
+# Ejercicio 30: Eliminar los espacios a la izquierda y derecha de la cadena dada.
+cadena5 = "   Coding For All   "
+print(cadena5.strip())  # 'Coding For All'
+
+# Ejercicio 31: ¿Cuál de las siguientes variables devuelve True cuando usamos el método isidentifier()?
+print('ClassOfPython'.isidentifier())  # True
+print('Class_of_python'.isidentifier())  # True
+
+# Ejercicio 32: Unir la lista con un hash con espacio entre las cadenas.
+librerias = ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
+print('# '.join(librerias))  # 'Django # Flask # Bottle # Pyramid # Falcon'
+
+# Ejercicio 33: Usar la secuencia de escape de nueva línea para separar las siguientes oraciones.
+print("py\nEstoy disfrutando de este desafío. Solo me pregunto qué será lo próximo.")
+
+# Ejercicio 34: Usar una secuencia de escape de tabulación para escribir las siguientes líneas.
+print("py\tNombre\tEdad\tPaís\tCiudad\nNelson\t250\tEspaña\tCaceres")
+
+# Ejercicio 35: Usar el método de formato de cadenas para mostrar lo siguiente.
+radius = 10
+area = 3.14 * radius ** 2
+print("The area of a circle with radius {} is {} meters square.".format(radius, area))
+
+# Ejercicio 36: Realice lo siguiente utilizando métodos de formato de cadena:
+print("8 + 6 = {}".format(8 + 6))
+print("8 - 6 = {}".format(8 - 6))
+print("8 * 6 = {}".format(8 * 6))
+print("8 / 6 = {:.2f}".format(8 / 6))
+print("8 % 6 = {}".format(8 % 6))
+print("8 // 6 = {}".format(8 // 6))
+print("8 ** 6 = {}".format(8 ** 6))

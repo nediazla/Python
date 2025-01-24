@@ -318,3 +318,6 @@ Para ejecutar el archivo de Python, consulte la imagen a continuación. Puede ej
     
 
 🎉 ¡FELICITACIONES! 🎉
+
+
+[Clase](https://youtu.be/-UEjKJ3wSiQ?si=vaPxehsUYlXODN_E)

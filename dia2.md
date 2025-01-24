@@ -264,3 +264,5 @@ Ejemplo:
 17. Ejecuta help('keywords') en el shell de Python o en tu archivo para verificar las palabras reservadas o palabras clave de Python.
 
 🎉 ¡FELICITACIONES! 🎉
+
+[Clase](https://youtu.be/ZNcAGOkz1VY?si=q_pwKxVMiH2QeOwW)
