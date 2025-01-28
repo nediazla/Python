@@ -6,7 +6,7 @@
 # [Dia 5 - Tuplas](dia5b.md)
 # [Dia 5 - sets](dia5c.md)
 # [Dia 5 - Diccionarios](dia5d.md)
-# Dia 9 -
+# [Dia 6 - Condicionales](dia6.md) 
 # Dia 10 -
 
 # Dia 11
