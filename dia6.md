@@ -12,7 +12,8 @@ De manera predeterminada, las sentencias en un script de Python se ejecutan secu
 En Python y otros lenguajes de programación, la palabra clave *if* se usa para verificar si una condición es verdadera y para ejecutar el código del bloque. Recuerde la sangría después de los dos puntos.
 
 ```python
-# syntaxif condition:
+# syntax
+if condition:
     this part of code runs for truthy conditions
 ```
 
@@ -32,7 +33,8 @@ Como puede ver en el ejemplo anterior, 3 es mayor que 0. La condición era verda
 Si la condición es verdadera se ejecutará el primer bloque, si no se ejecutará la condición else.
 
 ```python
-# syntaxif condition:
+# syntax
+if condition:
     this part of code runs for truthy conditions
 else:
      this part of code runs for false conditions
@@ -168,7 +170,7 @@ else:
 
 1. Obtén la información del usuario usando input(“Ingresa tu edad:”). Si el usuario tiene 18 años o más, envía comentarios: Tienes la edad suficiente para conducir. Si tienes menos de 18 años, envía comentarios para esperar la cantidad de años que falta. Resultado:
     
-    ```bash
+    ```python
     Enter your age: 30
     You are old enough to learn to drive.
     Output:Enter your age: 15
@@ -177,14 +179,14 @@ else:
     
 2. Compara los valores de my_age y your_age usando if … else. ¿Quién es mayor (tú o yo)? Usa input(“Ingresa tu edad:”) para obtener la edad como entrada. Puedes usar una condición anidada para imprimir ‘year’ para una diferencia de edad de 1 año, ‘years’ para diferencias mayores y un texto personalizado si my_age = your_age. Salida:
     
-    ```bash
+    ```python
     Enter your age: 30
     You are 5 years older than me.
     ```
     
 3. Obtener dos números del usuario mediante el mensaje de entrada. Si a es mayor que b, devolver a es mayor que b; si a es menor que b, devolver a es menor que b; de lo contrario, a es igual a b. Salida:
     
-    ```bash
+    ```python
     Enter number one: 4
     Enter number two: 3
     4 is greater than 3
@@ -193,7 +195,7 @@ else:
 
 ### 
 
-```bash
+```python
 80-100, A
 70-89, B
 60-69, C
@@ -220,14 +222,12 @@ Marzo, Abril o Mayo, la estación es Primavera.
 Junio, Julio o Agosto, la estación es Verano.
 2. La siguiente lista contiene algunas frutas:
 
-```
-```sh
+```python
 fruits = ['banana', 'orange', 'mango', 'lemon']
 ```
 
 Si una fruta no existe en la lista, agréguela a la lista e imprima la lista modificada. Si la fruta existe, imprima ('Esa fruta ya existe en la lista')
-```
-
+```python
 ### Ejercicios: Nivel 3
 
 1. Aquí tenemos un diccionario de personas. ¡Siéntete libre de modificarlo!
