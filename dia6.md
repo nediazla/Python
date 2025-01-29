@@ -162,7 +162,7 @@ else:
     print('Access denied!')
 ```
 
-🌕 Lo estás haciendo muy bien. Nunca te rindas porque las grandes cosas llevan tiempo. Acabas de completar los desafíos del día 9 y estás 9 pasos adelante en tu camino hacia la grandeza. Ahora haz algunos ejercicios para tu cerebro y músculos.
+🌕 Lo estás haciendo muy bien. Nunca te rindas porque las grandes cosas llevan tiempo. Acabas de completar los desafíos del día 6 y estás 6 pasos adelante en tu camino hacia la grandeza. Ahora haz algunos ejercicios para tu cerebro y músculos.
 
 ## 💻 Ejercicios: Día 9
 

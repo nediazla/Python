@@ -339,7 +339,7 @@ dragon = {'d', 'r', 'a', 'g', 'o','n'}
 python.isdisjoint(dragon)
 ```
 
-🌕 Eres una estrella en ascenso. Acabas de completar los desafíos del día 7 y estás 7 pasos adelante en tu camino hacia la grandeza. Ahora haz algunos ejercicios para tu cerebro y tus músculos.
+🌕 Eres una estrella en ascenso. Acabas de completar los desafíos del día 5 y estás 5 pasos adelante en tu camino hacia la grandeza. Ahora haz algunos ejercicios para tu cerebro y tus músculos.
 
 ## 💻 Ejercicios: Día 5
 

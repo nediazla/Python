@@ -189,7 +189,7 @@ fruits = ('banana', 'orange', 'mango', 'lemon')
 del fruits
 ```
 
-🌕 Eres muy valiente, has llegado hasta aquí. Acabas de completar los desafíos del día 6 y estás 6 pasos adelante en tu camino hacia la grandeza. Ahora haz algunos ejercicios para tu cerebro y tus músculos.
+🌕 Eres muy valiente, has llegado hasta aquí. Acabas de completar los desafíos del día 5 y estás 5 pasos adelante en tu camino hacia la grandeza. Ahora haz algunos ejercicios para tu cerebro y tus músculos.
 
 ## 💻 Ejercicios: Día 5
 

@@ -275,7 +275,7 @@ values = dct.values()
 print(values) 
 ```
 
-🌕 Eres asombroso. Ahora estás supercargado con el poder de los diccionarios. Acabas de completar los desafíos del día 8 y estás 8 pasos adelante en tu camino hacia la grandeza. Ahora haz algunos ejercicios para tu cerebro y tus músculos.
+🌕 Eres asombroso. Ahora estás supercargado con el poder de los diccionarios. Acabas de completar los desafíos del día 5 y estás 5 pasos adelante en tu camino hacia la grandeza. Ahora haz algunos ejercicios para tu cerebro y tus músculos.
 
 ## 💻 Ejercicios: Día 5
 
