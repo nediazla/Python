@@ -235,12 +235,16 @@ Continuar: usamos continuar cuando queremos omitir algunos de los pasos en la it
 **Ejemplo:**
 
 ```python
-numbers = (0,1,2,3,4,5)
-for number in numbers:
-    print(number)
-    if number == 3:
-        continue    
-        print('Next number should be ', number + 1) if number != 5 else print("loop's end")
+numeros = (0,1,2,3,4,5)
+
+for numero in numeros:
+   print(numero)
+    if numero == 3:
+       continue
+   if numero != 5:
+       print('el siguiente numero es: ', numero + 1)
+   else:
+       print('termina el loop')
 ```
 
 En el ejemplo anterior, si el número es igual a 3, se omite el paso *posterior* a la condición (pero dentro del bucle) y la ejecución del bucle continúa si quedan iteraciones.
@@ -414,3 +418,5 @@ The sum of all numbers is 5050.
 6. Encuentra los 10 países más poblados del mundo
 
 🎉 ¡FELICITACIONES! 🎉
+
+[Clase](https://youtu.be/jkdqa815k6o)

@@ -7,9 +7,9 @@
 # [Dia 5 - sets](dia5c.md)
 # [Dia 5 - Diccionarios](dia5d.md)
 # [Dia 6 - Condicionales](dia6.md) 
-# [Dia 7](dia7.md)
+# [Dia 7  - Loops](dia7.md)
 
-# Dia 11
+# [Dia 8 - Functions](dia8.md) 
 # Dia 12
 # Dia 13
 # Dia 14
