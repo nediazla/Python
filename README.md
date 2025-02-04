@@ -10,7 +10,7 @@
 # [Dia 7  - Loops](dia7.md)
 
 # [Dia 8 - Functions](dia8.md) 
-# Dia 12
+# [Dia 9 - Modulos](dia9/dia9.md)
 # Dia 13
 # Dia 14
 # Dia 15
