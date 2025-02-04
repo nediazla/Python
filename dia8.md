@@ -134,7 +134,6 @@ def weight_of_object (mass, gravity):
     return weight
 print('Weight of an object in Newtons: ', weight_of_object(100, 9.81))
 ```
-
 ### Pasar argumentos con clave y valor
 
 Si pasamos los argumentos con clave y valor, el orden de los argumentos no importa.
@@ -161,7 +160,6 @@ def add_two_numbers (num1, num2):
     print(total)
 print(add_two_numbers(num2 = 3, num1 = 2))
 ```
-
 ### Función que devuelve un valor - Parte 2
 
 Si no devolvemos un valor con una función, entonces nuestra función devuelve *None* de manera predeterminada. Para devolver un valor con una función, usamos la palabra clave *return* seguida de la variable que estamos devolviendo. Podemos devolver cualquier tipo de datos desde una función.
@@ -179,7 +177,6 @@ print_full_name(firstname='Nelson', lastname='Diaz')
 ```
 
 - Devolviendo un número:
-
 **Ejemplo:**
 
 ```python
@@ -216,7 +213,6 @@ def find_even_numbers(n):
     return evens
 print(find_even_numbers(10))
 ```
-
 ### Función con parámetros predeterminados
 
 A veces, pasamos valores predeterminados a los parámetros cuando invocamos la función. Si no pasamos argumentos al llamar a la función, se utilizarán sus valores predeterminados.
@@ -256,9 +252,7 @@ def weight_of_object (mass, gravity = 9.81):
 print('Weight of an object in Newtons: ', weight_of_object(100))
 print('Weight of an object in Newtons: ', weight_of_object(100, 1.62))
 ```
-
 ### Número arbitrario de argumentos
-
 Si no conocemos el número de argumentos que pasamos a nuestra función, podemos crear una función que pueda aceptar un número arbitrario de argumentos agregando * antes del nombre del parámetro.
 
 ```python
@@ -280,7 +274,6 @@ def sum_all_nums(*nums):
         return total
 print(sum_all_nums(2, 3, 5))
 ```
-
 ### Número de parámetros predeterminados y arbitrarios en funciones
 
 ```python
@@ -290,7 +283,6 @@ def generate_groups (team,*args):
         print(i)
 print(generate_groups('Team-1','Nelson','Brook','David','Eyob'))
 ```
-
 ### Función como parámetro de otra función
 
 ```python
@@ -303,7 +295,6 @@ print(do_something(square_number, 3)) # 27
 ```
 
 🌕 Has logrado mucho hasta ahora. ¡Sigue así! Acabas de completar los desafíos del día 11 y estás 11 pasos por delante en tu camino hacia la grandeza. Ahora haz algunos ejercicios para tu cerebro y tus músculos.
-
 ## 💻 Ejercicios: Día 11
 
 ### Ejercicios: Nivel 1
@@ -353,10 +344,9 @@ print(sum_of_numbers(100)) # 5050
 
 1. Declara una función llamada suma_de_números_impares. Esta función toma un parámetro numérico y suma todos los números impares en ese rango.
 2. Declara una función llamada suma_de_números_pares. Esta función toma un parámetro numérico y suma todos los números pares en ese rango.
-
 ### Ejercicios: Nivel 2
 
-1. Declara una función llamada evens_and_odds . Toma un entero positivo como parámetro y cuenta la cantidad de pares e impares en el número.
+3. Declara una función llamada evens_and_odds . Toma un entero positivo como parámetro y cuenta la cantidad de pares e impares en el número.
 
 ```python
     print(evens_and_odds(100))
@@ -364,17 +354,16 @@ print(sum_of_numbers(100)) # 5050
     # The number of evens are 51.
 ```
 
-1. Llama a tu función factorial, toma un número entero como parámetro y devuelve un factorial del número
-2. Llama a tu función *is_empty*, toma un parámetro y verifica si está vacío o no
-3. Escribe diferentes funciones que tomen listas. Deben calculate_mean, calculate_median, calculate_mode, calculate_range, calculate_variance, calculate_std (desviación estándar).
-
+4. Llama a tu función factorial, toma un número entero como parámetro y devuelve un factorial del número
+5. Llama a tu función *is_empty*, toma un parámetro y verifica si está vacío o no
+6. Escribe diferentes funciones que tomen listas. Deben calculate_mean, calculate_median, calculate_mode, calculate_range, calculate_variance, calculate_std (desviación estándar).
 ### Ejercicios: Nivel 3
 
-1. Escribe una función llamada is_prime, que verifique si un número es primo.
-2. Escribe una función que verifique si todos los elementos son únicos en la lista.
-3. Escribe una función que verifique si todos los elementos de la lista son del mismo tipo de datos.
-4. Escribe una función que verifique si la variable proporcionada es una variable de Python válida
-5. Ve a la carpeta de datos y accede al archivo [countries-data.py](https://github.com/nediazla/Python/blob/main/data/countries-data.py).
+7. Escribe una función llamada is_prime, que verifique si un número es primo.
+8. Escribe una función que verifique si todos los elementos son únicos en la lista.
+9. Escribe una función que verifique si todos los elementos de la lista son del mismo tipo de datos.
+10. Escribe una función que verifique si la variable proporcionada es una variable de Python válida
+11. Ve a la carpeta de datos y accede al archivo [countries-data.py](https://github.com/nediazla/Python/blob/main/data/countries-data.py).
 - Crea una función llamada the most_spoken_languages ​​in the world. Debería devolver 10 o 20 de los idiomas más hablados del mundo en orden descendente
 - Crea una función llamada the most_populated_countries. Debería devolver 10 o 20 de los países más poblados en orden descendente.
 
