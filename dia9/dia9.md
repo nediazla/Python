@@ -1,13 +1,10 @@
 # Dia 9: modules
 
-## 
-
 ## Módulos
 
 ### ¿Qué es un módulo?
 
 Un módulo es un archivo que contiene un conjunto de códigos o un conjunto de funciones que se pueden incluir en una aplicación. Un módulo puede ser un archivo que contiene una sola variable, una función o una gran base de código.
-
 ### Creación de un módulo
 
 Para crear un módulo, escribimos nuestros códigos en un script de Python y lo guardamos como un archivo .py. Crea un archivo llamado [mymodule.py](http://mymodule.py/) dentro de la carpeta de tu proyecto. Escribamos algo de código en este archivo.
@@ -29,7 +26,6 @@ Para importar el archivo, usamos la palabra clave *import* y solo el nombre del 
 import mymodule
 print(mymodule.generate_full_name('Nelson', 'Diaz')) # Nelson Diaz
 ```
-
 ### Importar funciones desde un módulo
 
 Podemos tener muchas funciones en un archivo y podemos importarlas de forma diferente.
@@ -44,7 +40,6 @@ weight = mass * gravity
 print(weight)
 print(person['firstname'])
 ```
-
 ### Importar funciones desde un módulo y cambiar el nombre
 
 Durante la importación podemos cambiar el nombre del módulo.
@@ -59,11 +54,9 @@ print(weight)
 print(p)
 print(p['firstname'])
 ```
-
 ## Importar módulos integrados
 
 Al igual que otros lenguajes de programación, también podemos importar módulos importando el archivo o la función utilizando la palabra clave *import*. Importemos el módulo común que utilizaremos la mayor parte del tiempo. Algunos de los módulos integrados comunes son: *math*, *datetime*, *os*, *sys*, *random*, *statistics*, *collections*, *json*, *re*
-
 ### Módulo OS
 
 Con el módulo *os* de Python es posible realizar automáticamente muchas tareas del sistema operativo. El módulo OS de Python proporciona funciones para crear, cambiar el directorio de trabajo actual y eliminar un directorio (carpeta), obtener su contenido, cambiar e identificar el directorio actual.
@@ -80,7 +73,6 @@ os.getcwd()
 # Removing directory
 os.rmdir()
 ```
-
 ### Módulo Sys
 
 El módulo sys proporciona funciones y variables que se utilizan para manipular diferentes partes del entorno de ejecución de Python. La función sys.argv devuelve una lista de argumentos de línea de comandos que se pasan a un script de Python. El elemento en el índice 0 de esta lista siempre es el nombre del script, y en el índice 1 es el argumento que se pasa desde la línea de comandos.
@@ -118,7 +110,6 @@ sys.path
 # To know the version of python you are using
 sys.version
 ```
-
 ### Módulo de estadísticas
 
 El módulo de estadísticas proporciona funciones para estadísticas matemáticas de datos numéricos. Las funciones estadísticas más populares que se definen en este módulo son: *media*, *mediana*, *moda*, *desviación estándar*, etc.
@@ -131,7 +122,6 @@ print(median(ages))     # 23
 print(mode(ages))       # 20
 print(stdev(ages))      # ~2.3
 ```
-
 ### Módulo de Matemáticas
 
 Módulo que contiene muchas operaciones y constantes matemáticas.
@@ -194,7 +184,6 @@ print(string.ascii_letters) # abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWX
 print(string.digits)        # 0123456789
 print(string.punctuation)   # !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
 ```
-
 ### Módulo aleatorio
 
 A esta altura ya está familiarizado con la importación de módulos. Hagamos una importación más para familiarizarnos con ella. Importemos el módulo *random* que nos da un número aleatorio entre 0 y 0,9999... El módulo *random* tiene muchas funciones, pero en esta sección solo utilizaremos *random* y *randint*.
@@ -242,7 +231,6 @@ print(user_id_gen_by_user()) # 16 5
 print(rgb_color_gen())
 # rgb(125,244,255) - the output should be in this form
 ```
-
 ### Ejercicios: Nivel 2
 
 1. Escribe una función list_of_hexa_colors que devuelva cualquier número de colores hexadecimales en una matriz (seis números hexadecimales escritos después de #. El sistema de numeración hexadecimal está formado por 16 símbolos, del 0 al 9 y las primeras 6 letras del alfabeto, de la a a la f. Consulta la tarea 6 para ver ejemplos de resultados).
@@ -255,7 +243,6 @@ print(rgb_color_gen())
    generate_colors('rgb', 3)  # ['rgb(5, 55, 175','rgb(50, 105, 100','rgb(15, 26, 80']   
    generate_colors('rgb', 1)  # ['rgb(33,79, 176)']
 ```
-
 ### Ejercicios: Nivel 3
 
 1. Llama a tu función shuffle_list, que toma una lista como parámetro y devuelve una lista aleatoria.
