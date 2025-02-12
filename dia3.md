@@ -41,10 +41,10 @@ Los operadores de asignación se utilizan para asignar valores a las variables. 
 print('Addition: ', 1 + 2)        # 3
 print('Subtraction: ', 2 - 1)     # 1
 print('Multiplication: ', 2 * 3)  # 6
-print ('Division: ', 4 / 2)       # 2.0  Division in Python gives floating number
+print ('Division: ', 4 / 2)       # 2.0
 print('Division: ', 6 / 2)        # 3.0         
 print('Division: ', 7 / 2)        # 3.5
-print('Division without the remainder: ', 7 // 2)   # 3,  gives without the floating number or without the remaining
+print('Division without the remainder: ', 7 // 2)   # 3
 print ('Division without the remainder: ',7 // 3)   # 2
 print('Modulus: ', 3 % 2)         # 1, Gives the remainder
 print('Exponentiation: ', 2 ** 3) # 9 it means 2 * 2 * 2
@@ -86,8 +86,7 @@ remainder = a % b
 floor_division = a // b
 exponential = a ** b
 
-# I should have used sum instead of total but sum is a built-in function - try to avoid overriding built-in functions
-print(total) # if you do not label your print with some string, you never know where the result is coming from
+print(total)
 print('a + b = ', total)
 print('a - b = ', diff)
 print('a * b = ', product)
