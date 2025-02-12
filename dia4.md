@@ -131,20 +131,20 @@ print('{} // {} = {}'.format(a, b, a // b))
 print('{} ** {} = {}'.format(a, b, a ** b))
 
 # output
-4 + 3 = 7
-4 - 3 = 1
-4 * 3 = 12
-4 / 3 = 1.33
-4 % 3 = 1
-4 // 3 = 1
-4 ** 3 = 64
+# 4 + 3 = 7
+# 4 - 3 = 1
+# 4 * 3 = 12
+# 4 / 3 = 1.33
+# 4 % 3 = 1
+# 4 // 3 = 1
+# 4 ** 3 = 64
 
-# Strings  and numbers
+# Strings and numbers
 radius = 10
 pi = 3.14
 area = pi * radius ** 2
-formated_string = 'The area of a circle with a radius {} is {:.2f}.'.format(radius, area) # 2 digits after decimal
-print(formated_string)
+formated_area_string = 'The area of a circle with a radius {} is {:.2f}.'.format(radius, area) # 2 digits after decimal
+print(formated_area_string)
 ```
 
 ### String Interpolation / f-Strings (Python 3.6+)
@@ -307,10 +307,19 @@ last_name = 'Diaz'
 age = 250 
 job = 'teacher'
 country = 'Espana'
-sentence = 'I am {} {}. I am a {}. I am {} years old. I live in {}.'.format(first_name, last_name, age, job, country)
-print(sentence) # I am Nelson Diaz. Tengo 250 años. Soy profesor. Vivo en España.
-radius = 10pi = 3.14area = pi * radius ** 2result = 'The area of a circle with radius {} is {}'.format(str(radius), str(area))
-print(result) # The area of a circle with radius 10 is 314
+
+# Formateando la cadena con los datos personales
+sentence = 'I am {} {}. I am a {}. I am {} years old. I live in {}.'.format(first_name, last_name, job, age, country)
+print(sentence)  # I am Nelson Diaz. I am a teacher. I am 250 years old. I live in Espana.
+
+# Cálculo del área de un círculo
+radius = 10
+pi = 3.14
+area = pi * radius ** 2
+
+# Formateando la cadena con el área del círculo
+result = 'The area of a circle with radius {} is {}'.format(str(radius), str(area))
+print(result)  # The area of a circle with radius 10 is 314.0
 ```
 
 - index(): Devuelve el índice más bajo de una subcadena; los argumentos adicionales indican el índice inicial y final (valor predeterminado: 0 y longitud de cadena: 1). Si no se encuentra la subcadena, se genera un error de valor.

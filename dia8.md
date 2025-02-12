@@ -24,23 +24,25 @@ def function_name():
 ### Función sin parámetros
 
 La función se puede declarar sin parámetros.
-
 **Ejemplo:**
 
 ```python
-def generate_full_name ():
-    first_name = 'Nelson'    
-    last_name = 'Diaz'    
-    pace = ' '    
-    full_name = first_name + space + last_name
-    print(full_name)
-generate_full_name () # calling a function
-def add_two_numbers ():
-    num_one = 2    
-    num_two = 3    
-    total = num_one + num_two
+def generar_nombre_completo():
+    primer_nombre = 'Nelson'    
+    apellido = 'Diaz'    
+    espacio = ' '  # Corregido el nombre de la variable de 'pace' a 'espacio'
+    nombre_completo = primer_nombre + espacio + apellido
+    print(nombre_completo)
+
+generar_nombre_completo()  # llamando a la función
+
+def sumar_dos_numeros():
+    num_uno = 2    
+    num_dos = 3    
+    total = num_uno + num_dos
     print(total)
-add_two_numbers()
+
+sumar_dos_numeros()  # llamando a la función
 ```
 
 ### Función que devuelve un valor - Parte 1
@@ -48,19 +50,22 @@ add_two_numbers()
 La función también puede devolver valores. Si una función no tiene una declaración de retorno, el valor de la función es Ninguno. Reescribamos las funciones anteriores utilizando la instrucción de retorno. A partir de ahora, obtenemos un valor de una función cuando la llamamos y la imprimimos.
 
 ```python
-def generate_full_name ():
+def generate_full_name():
     first_name = 'Nelson'    
     last_name = 'Diaz'    
     space = ' '    
     full_name = first_name + space + last_name
-    return full_name
-print(generate_full_name())
-def add_two_numbers ():
+    return full_name  # Devolver el nombre completo
+
+print(generate_full_name())  # Imprimir el nombre completo
+
+def add_two_numbers():
     num_one = 2    
     num_two = 3    
     total = num_one + num_two
-    return total
-print(add_two_numbers())
+    return total  # Devolver la suma de los números
+
+print(add_two_numbers())  # Imprimir el resultado de la suma
 ```
 
 ### Función con parámetros
@@ -82,26 +87,38 @@ En una función podemos pasar distintos tipos de datos (número, cadena, boolean
 **Ejemplo:**
 
 ```python
-def greetings (name):
-    message = name + ', welcome to Python for Everyone!'    
+def greetings(name):
+    message = name + ', welcome to Python for Everyone!'
     return message
+
 print(greetings('Nelson'))
+
 def add_ten(num):
-    ten = 10    return num + ten
+    ten = 10
+    return num + ten
+
 print(add_ten(90))
+
 def square_number(x):
     return x * x
+
 print(square_number(2))
-def area_of_circle (r):
-    PI = 3.14    area = PI * r ** 2    
+
+def area_of_circle(r):
+    PI = 3.14
+    area = PI * r ** 2
     return area
+
 print(area_of_circle(10))
+
 def sum_of_numbers(n):
-    total = 0    for i in range(n+1):
-        total+=i
+    total = 0
+    for i in range(n+1):
+        total += i
     print(total)
-print(sum_of_numbers(10)) # 55
-print(sum_of_numbers(100)) # 5050
+
+print(sum_of_numbers(10))  # 55
+print(sum_of_numbers(100))  # 5050
 ```
 
 - Dos parámetros: una función puede tener o no uno o más parámetros. Una función también puede tener dos o más parámetros. Si nuestra función acepta parámetros, debemos llamarla con argumentos. Veamos una función con dos parámetros:
@@ -119,19 +136,29 @@ print(sum_of_numbers(100)) # 5050
 **Ejemplo:**
 
 ```python
-def generate_full_name (first_name, last_name):
-    space = ' '      full_name = first_name + space + last_name
-      return full_name
-print('Full Name: ', generate_full_name('Nelson','Diaz'))
-def sum_two_numbers (num_one, num_two):
-    sum = num_one + num_two
-    return sumprint('Sum of two numbers: ', sum_two_numbers(1, 9))
-def calculate_age (current_year, birth_year):
+def generate_full_name(first_name, last_name):
+    space = ' '  
+    full_name = first_name + space + last_name
+    return full_name
+
+print('Full Name: ', generate_full_name('Nelson', 'Diaz'))
+
+def sum_two_numbers(num_one, num_two):
+    sum_result = num_one + num_two
+    return sum_result
+
+print('Sum of two numbers: ', sum_two_numbers(1, 9))
+
+def calculate_age(current_year, birth_year):
     age = current_year - birth_year
-    return age;print('Age: ', calculate_age(2021, 1819))
-def weight_of_object (mass, gravity):
-    weight = str(mass * gravity)+ ' N'    
+    return age
+
+print('Age: ', calculate_age(2021, 1819))
+
+def weight_of_object(mass, gravity):
+    weight = str(mass * gravity) + ' N'
     return weight
+
 print('Weight of an object in Newtons: ', weight_of_object(100, 9.81))
 ```
 ### Pasar argumentos con clave y valor
@@ -152,13 +179,17 @@ print(function_name(para1 = 'John', para2 = 'Doe'))
 
 ```python
 def print_fullname(firstname, lastname):
-    space = ' '    full_name = firstname  + space + lastname
-    print(full_name)
-print(print_fullname(firstname = 'Nelson', lastname = 'Diaz'))
-def add_two_numbers (num1, num2):
+    space = ' '    
+    full_name = firstname + space + lastname
+    print(full_name)  # Imprime el nombre completo
+
+print_fullname(firstname='Nelson', lastname='Diaz')  # Llamada directa sin el print adicional
+
+def add_two_numbers(num1, num2):
     total = num1 + num2
-    print(total)
-print(add_two_numbers(num2 = 3, num1 = 2))
+    print(total)  # Imprime la suma
+
+add_two_numbers(num2=3, num1=2)  # Llamada directa sin el print adicional
 ```
 ### Función que devuelve un valor - Parte 2
 
@@ -170,35 +201,48 @@ Si no devolvemos un valor con una función, entonces nuestra función devuelve *
 ```python
 def print_name(firstname):
     return firstname
-print_name('Nelson') # Nelsondef print_full_name(firstname, lastname):
-    space = ' '    full_name = firstname  + space + lastname
+
+print(print_name('Nelson'))  # Esto imprimirá 'Nelson'
+
+def print_full_name(firstname, lastname):
+    space = ' '    
+    full_name = firstname + space + lastname
     return full_name
-print_full_name(firstname='Nelson', lastname='Diaz')
+
+print(print_full_name(firstname='Nelson', lastname='Diaz'))  # Esto imprimirá 'Nelson Diaz'
 ```
 
 - Devolviendo un número:
 **Ejemplo:**
 
 ```python
-def add_two_numbers (num1, num2):
+def add_two_numbers(num1, num2):
     total = num1 + num2
     return total
-print(add_two_numbers(2, 3))
-def calculate_age (current_year, birth_year):
+
+print(add_two_numbers(2, 3))  # Esto imprimirá 5
+
+def calculate_age(current_year, birth_year):
     age = current_year - birth_year
-    return age;print('Age: ', calculate_age(2019, 1819))
+    return age
+
+print('Age: ', calculate_age(2019, 1819))  # Esto imprimirá 'Age: 200'
 ```
 
 - Devolviendo un valor booleano:
 **Ejemplo:**
 
 ```python
-def is_even (n):
+def is_even(n):
     if n % 2 == 0:
         print('even')
-        return True   
-        return Falseprint(is_even(10)) # True
-        print(is_even(7)) # False
+        return True
+    else:
+        print('odd')
+        return False
+
+print(is_even(10))  # Esto imprimirá 'even' y luego True
+print(is_even(7))   # Esto imprimirá 'odd' y luego False
 ```
 
 - Devolviendo una lista:
@@ -206,12 +250,13 @@ def is_even (n):
 
 ```python
 def find_even_numbers(n):
-    evens = []
-    for i in range(n + 1):
-        if i % 2 == 0:
-            evens.append(i)
+    evens = []  # Lista para almacenar los números pares
+    for i in range(n + 1):  # Itera desde 0 hasta n
+        if i % 2 == 0:  # Si el número es par
+            evens.append(i)  # Añádelo a la lista
     return evens
-print(find_even_numbers(10))
+
+print(find_even_numbers(10))  # Esto imprimirá [0, 2, 4, 6, 8, 10]
 ```
 ### Función con parámetros predeterminados
 
@@ -231,26 +276,33 @@ function_name(arg)
 **Ejemplo:**
 
 ```python
-def greetings (name = 'Peter'):
-    message = name + ', welcome to Python for Everyone!'    
+def greetings(name='Peter'):
+    message = name + ', welcome to Python for Everyone!'
     return message
-print(greetings())
-print(greetings('Nelson'))
-def generate_full_name (first_name = 'Nelson', last_name = 'Diaz'):
-    space = ' '    
+
+print(greetings())  # Usando el valor por defecto 'Peter'
+print(greetings('Nelson'))  # Usando el nombre 'Nelson'
+
+def generate_full_name(first_name='Nelson', last_name='Diaz'):
+    space = ' '
     full_name = first_name + space + last_name
     return full_name
-print(generate_full_name())
-print(generate_full_name('David','Smith'))
-def calculate_age (birth_year,current_year = 2021):
+
+print(generate_full_name())  # Usando los valores por defecto
+print(generate_full_name('David', 'Smith'))  # Usando 'David' y 'Smith'
+
+def calculate_age(birth_year, current_year=2021):
     age = current_year - birth_year
-    return age;
-    print('Age: ', calculate_age(1821))
-def weight_of_object (mass, gravity = 9.81):
-    weight = str(mass * gravity)+ ' N' 
+    return age  # Se debe retornar el valor para usarlo fuera de la función
+
+print('Age: ', calculate_age(1821))  # Imprimiendo el resultado de la edad
+
+def weight_of_object(mass, gravity=9.81):
+    weight = str(mass * gravity) + ' N'
     return weight
-print('Weight of an object in Newtons: ', weight_of_object(100))
-print('Weight of an object in Newtons: ', weight_of_object(100, 1.62))
+
+print('Weight of an object in Newtons: ', weight_of_object(100))  # Usando el valor por defecto de gravedad (9.81)
+print('Weight of an object in Newtons: ', weight_of_object(100, 1.62))  # Usando una gravedad diferente (1.62)
 ```
 ### Número arbitrario de argumentos
 Si no conocemos el número de argumentos que pasamos a nuestra función, podemos crear una función que pueda aceptar un número arbitrario de argumentos agregando * antes del nombre del parámetro.
@@ -269,10 +321,12 @@ function_name(param1, param2, param3,..)
 
 ```python
 def sum_all_nums(*nums):
-    total = 0    for num in nums:
-        total += num      
-        return total
-print(sum_all_nums(2, 3, 5))
+    total = 0
+    for num in nums:
+        total += num  # Sumar el número a total
+    return total  # El return debe estar fuera del bucle for
+
+print(sum_all_nums(2, 3, 5))  # Esto imprimirá 10
 ```
 ### Número de parámetros predeterminados y arbitrarios en funciones
 
@@ -287,14 +341,16 @@ print(generate_groups('Team-1','Nelson','Brook','David','Eyob'))
 
 ```python
 #You can pass functions around as parameters
-def square_number (n):
-    return n * n
+def square_number(n):
+    return n * n  # Retorna el cuadrado del número
+
 def do_something(f, x):
-    return f(x)
-print(do_something(square_number, 3)) # 27
+    return f(x)  # Aplica la función f al argumento x
+
+print(do_something(square_number, 3))  # Esto imprimirá 9 (3 * 3)
 ```
 
-🌕 Has logrado mucho hasta ahora. ¡Sigue así! Acabas de completar los desafíos del día 11 y estás 11 pasos por delante en tu camino hacia la grandeza. Ahora haz algunos ejercicios para tu cerebro y tus músculos.
+🌕 Has logrado mucho hasta ahora. ¡Sigue así! Acabas de completar los desafíos del día 8 y estás 8 pasos por delante en tu camino hacia la grandeza. Ahora haz algunos ejercicios para tu cerebro y tus músculos.
 ## 💻 Ejercicios: Día 11
 
 ### Ejercicios: Nivel 1
@@ -315,8 +371,8 @@ print(reverse_list1(["A", "B", "C"]))
 
 ```
 
-1. Declara una función llamada capitalize_list_items. Esta toma una lista como parámetro y devuelve una lista de elementos en mayúsculas.
-2. Declara una función llamada add_item. Esta toma una lista y un elemento como parámetros. Devuelve una lista con el elemento agregado al final.
+10. Declara una función llamada capitalize_list_items. Esta toma una lista como parámetro y devuelve una lista de elementos en mayúsculas.
+11. Declara una función llamada add_item. Esta toma una lista y un elemento como parámetros. Devuelve una lista con el elemento agregado al final.
 
 ```python
 food_staff = ['Potato', 'Tomato', 'Mango', 'Milk']
@@ -325,7 +381,7 @@ numbers = [2, 3, 7, 9]
 print(add_item(numbers, 5))
 ```
 
-1. Declara una función llamada remove_item. Esta toma como parámetros una lista y un elemento. Devuelve una lista con el elemento eliminado de ella.
+12. Declara una función llamada remove_item. Esta toma como parámetros una lista y un elemento. Devuelve una lista con el elemento eliminado de ella.
 
 ```python
 food_staff = ['Potato', 'Tomato', 'Mango', 'Milk']
@@ -334,7 +390,7 @@ numbers = [2, 3, 7, 9]
 print(remove_item(numbers, 3))
 ```
 
-1. Declara una función denominada suma_de_números. Esta función toma un parámetro numérico y suma todos los números de ese rango.
+13. Declara una función denominada suma_de_números. Esta función toma un parámetro numérico y suma todos los números de ese rango.
 
 ```python
 print(sum_of_numbers(5))  # 15
@@ -342,11 +398,11 @@ print(sum_of_numbers(10)) # 55
 print(sum_of_numbers(100)) # 5050
 ```
 
-1. Declara una función llamada suma_de_números_impares. Esta función toma un parámetro numérico y suma todos los números impares en ese rango.
-2. Declara una función llamada suma_de_números_pares. Esta función toma un parámetro numérico y suma todos los números pares en ese rango.
+14. Declara una función llamada suma_de_números_impares. Esta función toma un parámetro numérico y suma todos los números impares en ese rango.
+15. Declara una función llamada suma_de_números_pares. Esta función toma un parámetro numérico y suma todos los números pares en ese rango.
 ### Ejercicios: Nivel 2
 
-3. Declara una función llamada evens_and_odds . Toma un entero positivo como parámetro y cuenta la cantidad de pares e impares en el número.
+1. Declara una función llamada evens_and_odds . Toma un entero positivo como parámetro y cuenta la cantidad de pares e impares en el número.
 
 ```python
     print(evens_and_odds(100))
@@ -354,16 +410,16 @@ print(sum_of_numbers(100)) # 5050
     # The number of evens are 51.
 ```
 
-4. Llama a tu función factorial, toma un número entero como parámetro y devuelve un factorial del número
-5. Llama a tu función *is_empty*, toma un parámetro y verifica si está vacío o no
-6. Escribe diferentes funciones que tomen listas. Deben calculate_mean, calculate_median, calculate_mode, calculate_range, calculate_variance, calculate_std (desviación estándar).
+2. Llama a tu función factorial, toma un número entero como parámetro y devuelve un factorial del número
+3. Llama a tu función *is_empty*, toma un parámetro y verifica si está vacío o no
+4. Escribe diferentes funciones que tomen listas. Deben calculate_mean, calculate_median, calculate_mode, calculate_range, calculate_variance, calculate_std (desviación estándar).
 ### Ejercicios: Nivel 3
 
-7. Escribe una función llamada is_prime, que verifique si un número es primo.
-8. Escribe una función que verifique si todos los elementos son únicos en la lista.
-9. Escribe una función que verifique si todos los elementos de la lista son del mismo tipo de datos.
-10. Escribe una función que verifique si la variable proporcionada es una variable de Python válida
-11. Ve a la carpeta de datos y accede al archivo [countries-data.py](https://github.com/nediazla/Python/blob/main/data/countries-data.py).
+1. Escribe una función llamada is_prime, que verifique si un número es primo.
+2. Escribe una función que verifique si todos los elementos son únicos en la lista.
+3. Escribe una función que verifique si todos los elementos de la lista son del mismo tipo de datos.
+4. Escribe una función que verifique si la variable proporcionada es una variable de Python válida
+5. Ve a la carpeta de datos y accede al archivo [countries-data.py](https://github.com/nediazla/Python/blob/main/data/countries-data.py).
 - Crea una función llamada the most_spoken_languages ​​in the world. Debería devolver 10 o 20 de los idiomas más hablados del mundo en orden descendente
 - Crea una función llamada the most_populated_countries. Debería devolver 10 o 20 de los países más poblados en orden descendente.
 
