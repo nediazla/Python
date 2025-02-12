@@ -90,9 +90,9 @@ Utilicemos las funciones integradas *print()* y *len()*. La función Print acept
 **Ejemplo:**
 
 ```python
-print('Hello, World!') # The text Hello, World! is an argument
-print('Hello',',', 'World','!') # it can take multiple arguments, four arguments have been passed
-print(len('Hello, World!')) # it takes only one argument
+print('Hello, World!')
+print('Hello',',', 'World','!') 
+print(len('Hello, World!'))
 ```
 
 Imprimamos y busquemos también la longitud de las variables declaradas en la parte superior:
