@@ -11,11 +11,23 @@ Para crear un módulo, escribimos nuestros códigos en un script de Python y lo 
 
 ```python
 # mymodule.py file
-def generate_full_name(firstname, lastname):
-    return firstname + ' ' + lastname
+def generate_full_name(firstname, lastname):  
+      space = ' '  
+      fullname = firstname + space + lastname  
+      return fullname  
+  
+def sum_two_nums (num1, num2):  
+    return num1 + num2  
+gravity = 9.81  
+person = {  
+    "firstname": "Nelson",  
+    "age": 250,  
+    "country": "Espana",  
+    "city":'Caceres'  
+}
 ```
 
-Cree el archivo [main.py](http://main.py/) en el directorio de su proyecto e importe el archivo [mymodule.py](http://mymodule.py/).
+Cree el archivo [main.py] en el directorio de su proyecto e importe el archivo [mymodule.py].
 
 ### Importación de un módulo
 
@@ -33,11 +45,19 @@ Podemos tener muchas funciones en un archivo y podemos importarlas de forma dife
 ```python
 # main.py file
 from mymodule import generate_full_name, sum_two_nums, person, gravity
-print(generate_full_name('Nelson','Diaz'))
-print(sum_two_nums(1,9))
-mass = 100;
+
+# Imprime el nombre completo
+print(generate_full_name('Nelson', 'Diaz'))
+
+# Imprime la suma de los dos números
+print(sum_two_nums(1, 9))
+
+# Calcula el peso usando la masa y la gravedad
+mass = 100  # No es necesario el punto y coma
 weight = mass * gravity
 print(weight)
+
+# Imprime el primer nombre de la persona (debería existir la clave 'firstname' en el diccionario person)
 print(person['firstname'])
 ```
 ### Importar funciones desde un módulo y cambiar el nombre
@@ -47,11 +67,22 @@ Durante la importación podemos cambiar el nombre del módulo.
 ```python
 # main.py file
 from mymodule import generate_full_name as fullname, sum_two_nums as total, person as p, gravity as g
-print(fullname('Nelson','Diaz'))
+
+# Imprime el nombre completo
+print(fullname('Nelson', 'Diaz'))
+
+# Imprime la suma de los dos números
 print(total(1, 9))
-mass = 100;weight = mass * g
+
+# Calcula el peso usando la masa y la gravedad
+mass = 100
+weight = mass * g
 print(weight)
+
+# Imprime todo el diccionario 'person'
 print(p)
+
+# Imprime el primer nombre de la persona
 print(p['firstname'])
 ```
 ## Importar módulos integrados
@@ -87,8 +118,8 @@ print('Welcome {}. Enjoy  {} challenge!'.format(sys.argv[1], sys.argv[2]))
 
 Ahora, para comprobar cómo funciona este script, escribí en la línea de comandos:
 
-```bash
-python script.py 
+```python
+script.py 
 Nelson ClassOfPython
 ```
 
@@ -147,24 +178,27 @@ También es posible importar varias funciones a la vez
 
 ```python
 from math import pi, sqrt, pow, floor, ceil, log10
-print(pi)                 # 3.141592653589793
-print(sqrt(2))            # 1.4142135623730951
-print(pow(2, 3))          # 8.0
-print(floor(9.81))        # 9
-print(ceil(9.81))         # 10
-print(math.log10(100))    # 2
+
+print(pi) # 3.141592653589793 
+print(sqrt(2)) # 1.4142135623730951 
+print(pow(2, 3)) # 8.0 
+print(floor(9.81)) # 9 
+print(ceil(9.81)) # 10 
+print(log10(100)) # 2.0
 ```
 
 Pero si queremos importar todas las funciones del módulo matemático podemos usar *.
 
 ```python
 from math import *
-print(pi)                  # 3.141592653589793, pi constant
-print(sqrt(2))             # 1.4142135623730951, square root
-print(pow(2, 3))           # 8.0, exponential
-print(floor(9.81))         # 9, rounding to the lowest
-print(ceil(9.81))          # 10, rounding to the highest
-print(math.log10(100))     # 2
+
+print(pi)                 # 3.141592653589793, constante pi
+print(sqrt(2))            # 1.4142135623730951, raíz cuadrada de 2
+print(pow(2, 3))          # 8.0, 2 elevado a la potencia 3
+print(floor(9.81))        # 9, redondeo hacia abajo
+print(ceil(9.81))         # 10, redondeo hacia arriba
+print(log10(100))         # 2, logaritmo en base 10 de 100
+
 ```
 
 Al importar también podemos cambiar el nombre de la función.
@@ -180,9 +214,10 @@ Un módulo de cadena es un módulo útil para muchos propósitos. El siguiente e
 
 ```python
 import string
-print(string.ascii_letters) # abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
-print(string.digits)        # 0123456789
-print(string.punctuation)   # !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+
+print(string.ascii_letters)  # abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+print(string.digits)         # 0123456789
+print(string.punctuation)    # !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
 ```
 ### Módulo aleatorio
 
@@ -190,8 +225,9 @@ A esta altura ya está familiarizado con la importación de módulos. Hagamos un
 
 ```python
 from random import random, randint
-print(random())   # it doesn't take any arguments; it returns a value between 0 and 0.9999
-print(randint(5, 20)) # it returns a random integer number between [5, 20] inclusive
+
+print(random())        # Devuelve un valor entre 0.0 y 1.0, excluyendo 1.0
+print(randint(5, 20))  # Devuelve un valor entre 5 y 20, inclusive
 ```
 
 🌕 ¡Estás llegando lejos! ¡Sigue así! Acabas de completar los desafíos del día 12 y estás a 12 pasos de tu camino hacia la grandeza. Ahora haz algunos ejercicios para tu cerebro y tus músculos.
