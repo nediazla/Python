@@ -230,7 +230,7 @@ print(random())        # Devuelve un valor entre 0.0 y 1.0, excluyendo 1.0
 print(randint(5, 20))  # Devuelve un valor entre 5 y 20, inclusive
 ```
 
-🌕 ¡Estás llegando lejos! ¡Sigue así! Acabas de completar los desafíos del día 12 y estás a 12 pasos de tu camino hacia la grandeza. Ahora haz algunos ejercicios para tu cerebro y tus músculos.
+🌕 ¡Estás llegando lejos! ¡Sigue así! Acabas de completar los desafíos del día 9 y estás a 9 pasos de tu camino hacia la grandeza. Ahora haz algunos ejercicios para tu cerebro y tus músculos.
 
 ## 💻 Ejercicios: Día 9
 
@@ -285,3 +285,5 @@ print(rgb_color_gen())
 2. Escribe una función que devuelva una matriz de siete números aleatorios en un rango de 0 a 9. Todos los números deben ser únicos.
 
 🎉 ¡FELICITACIONES! 🎉
+
+[Juego de Palabras](palabras.py)
