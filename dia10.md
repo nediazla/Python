@@ -1,7 +1,6 @@
 # Dia 10: list comprehension
 
 ## Comprensión de listas
-
 La comprensión de listas en Python es una forma compacta de crear una lista a partir de una secuencia. Es una forma abreviada de crear una nueva lista. La comprensión de listas es considerablemente más rápida que procesar una lista utilizando el bucle *for*.
 
 ```python
@@ -10,7 +9,6 @@ La comprensión de listas en Python es una forma compacta de crear una lista a p
 ```
 
 **Ejemplo: 1**
-
 Por ejemplo, si desea convertir una cadena en una lista de caracteres, puede utilizar un par de métodos. Veamos algunos de ellos:
 
 ```python
@@ -27,9 +25,7 @@ print(lst)  # Imprime ['P', 'y', 't', 'h', 'o', 'n']
 ```
 
 **Ejemplo:2**
-
 Por ejemplo, si desea generar una lista de números
-
 ```python
 # Generando números del 0 al 10 usando comprensión de listas
 numbers = [i for i in range(11)]  # Genera una lista con números del 0 al 10
@@ -45,9 +41,7 @@ print(numbers_and_squares)  # Imprime [(0, 0), (1, 1), (2, 4), (3, 9), (4, 16), 
 ```
 
 **Ejemplo: 2**
-
 La comprensión de listas se puede combinar con la expresión if
-
 ```python
 # Generando números pares en el rango de 0 a 20
 even_numbers = [i for i in range(21) if i % 2 == 0]  # Genera una lista de números pares en el rango de 0 a 20
@@ -69,11 +63,9 @@ print(flattened_list)  # Imprime [1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
 
 ## Función Lambda
-
 La función Lambda es una pequeña función anónima sin nombre. Puede aceptar cualquier cantidad de argumentos, pero solo puede tener una expresión. La función Lambda es similar a las funciones anónimas en JavaScript. La necesitamos cuando queremos escribir una función anónima dentro de otra función.
 
 ### Creación de una función Lambda
-
 Para crear una función Lambda, usamos la palabra clave *lambda* seguida de uno o más parámetros, seguidos de una expresión. Vea la sintaxis y el ejemplo a continuación. La función Lambda no usa return, pero devuelve explícitamente la expresión.
 
 ```python
@@ -83,7 +75,6 @@ print(x(arg1, arg2, arg3))
 ```
 
 **Ejemplo:**
-
 ```python
 # Función nombrada
 def add_two_nums(a, b):
@@ -111,9 +102,7 @@ print(multiple_variable(5, 5, 3))  # Imprime 22
 ```
 
 ### Función Lambda dentro de otra función
-
 Uso de una función Lambda dentro de otra función.
-
 ```python
 # Función que retorna una función lambda que calcula la potencia
 def power(x):
@@ -130,25 +119,24 @@ print(two_power_of_five)  # Imprime 32
 
 🌕 ¡Sigue así! ¡No dejes de insistir, el cielo es el límite! Acabas de completar los desafíos del día 10 y estás 10 pasos por delante en tu camino hacia la grandeza. Ahora haz algunos ejercicios para tu cerebro y tus músculos.
 
-## 💻 Ejercicios: Día 13
-
+## 💻 Ejercicios: Día 10
 1. Filtrar solo los negativos y ceros en la lista usando la comprensión de listas
     
-    ```python
+```python
     numbers = [-4, -3, -2, -1, 0, 2, 4, 6]
-    ```
+```
     
 2. Aplanar la siguiente lista de listas de listas a una lista unidimensional:
     
-    ```python
+```python
     list_of_lists =[[[1, 2, 3]], [[4, 5, 6]], [[7, 8, 9]]]
     output
     [1, 2, 3, 4, 5, 6, 7, 8, 9]
-    ```
+```
     
 3. Usando la comprensión de listas, cree la siguiente lista de tuplas:
     
-    ```python
+```python
     [(0, 1, 0, 0, 0, 0, 0),
     (1, 1, 1, 1, 1, 1, 1),
     (2, 1, 2, 4, 8, 16, 32),
@@ -160,33 +148,33 @@ print(two_power_of_five)  # Imprime 32
     (8, 1, 8, 64, 512, 4096, 32768),
     (9, 1, 9, 81, 729, 6561, 59049),
     (10, 1, 10, 100, 1000, 10000, 100000)]
-    ```
+```
     
 4. Aplanar la siguiente lista para formar una nueva lista:
     
-    ```python
-    countries = [[('Finland', 'Helsinki')], [('Sweden', 'Stockholm')], [('Norway', 'Oslo')]]
-    output:
-    [['FINLAND','FIN', 'HELSINKI'], ['SWEDEN', 'SWE', 'STOCKHOLM'], ['NORWAY', 'NOR', 'OSLO']]
-    ```
+```python
+countries = [[('Finland', 'Helsinki')], [('Sweden', 'Stockholm')], [('Norway', 'Oslo')]]
+output:
+[['FINLAND','FIN', 'HELSINKI'], ['SWEDEN', 'SWE', 'STOCKHOLM'], ['NORWAY', 'NOR', 'OSLO']]
+```
     
 5. Cambie la siguiente lista a una lista de diccionarios:
     
-    ```python
-    countries = [[('Finland', 'Helsinki')], [('Sweden', 'Stockholm')], [('Norway', 'Oslo')]]
-    output:
-    [{'country': 'FINLAND', 'city': 'HELSINKI'},
-    {'country': 'SWEDEN', 'city': 'STOCKHOLM'},
-    {'country': 'NORWAY', 'city': 'OSLO'}]
-    ```
+```python
+countries = [[('Finland', 'Helsinki')], [('Sweden', 'Stockholm')], [('Norway', 'Oslo')]]
+output:
+[{'country': 'FINLAND', 'city': 'HELSINKI'},
+{'country': 'SWEDEN', 'city': 'STOCKHOLM'},
+{'country': 'NORWAY', 'city': 'OSLO'}]
+```
     
 6. Cambie la siguiente lista de listas a una lista de cadenas concatenadas:
     
-    ```python
+```python
     names = [[('Nelson', 'Diaz')], [('David', 'Smith')], [('Donald', 'Trump')], [('Bill', 'Gates')]]
     output
     ['Nelson Diaz', 'David Smith', 'Donald Trump', 'Bill Gates']
-    ```
+```
     
 7. Escribe una función lambda que pueda resolver una pendiente o una intersección con el eje y de funciones lineales.
 
