@@ -11,7 +11,7 @@
 
 # [Dia 8 - Functions](dia8.md) 
 # [Dia 9 - Modulos](dia9/dia9.md)
-# Dia 13
+# [Dia 10 - listas y lambda](dia10.md)
 # Dia 14
 # Dia 15
 # Dia 16
