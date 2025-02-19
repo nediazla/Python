@@ -179,3 +179,6 @@ output:
 7. Escribe una función lambda que pueda resolver una pendiente o una intersección con el eje y de funciones lineales.
 
 🎉 ¡FELICITACIONES! 🎉
+
+[Familia](data/familia.py)
+[Familia](data/familia2.py)
