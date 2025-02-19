@@ -180,6 +180,6 @@ output:
 
 🎉 ¡FELICITACIONES! 🎉
 
-[Familia](data/familia.py)
+[Familia](familia.py)
 
-[Familia](data/familia2.py)
+[Familia](familia2.py)
