@@ -8,10 +8,11 @@ Un set es una colección de elementos. Permítanme llevarlos de regreso a su lec
 
 Usamos la función incorporada *set()*.
 
-- Creación de un setvacío
+- Creación de un set vacío
 
 ```python
-# syntaxst = set()
+# syntax
+st = set()
 ```
 
 - Creando un setcon elementos iniciales
@@ -56,7 +57,7 @@ Para comprobar si un elemento existe en una lista, utilizamos el operador de per
 ```python
 # syntax
 st = {'item1', 'item2', 'item3', 'item4'}
-print("Does set st contain item3? ", 'item3' in st) # Does set st contain item3? True
+print("Does set st contain item3? ", 'item3' in st)
 ```
 
 **ejemplo:**
@@ -200,9 +201,16 @@ st3 = st1.union(st2)
 **Ejemplo:**
 
 ```python
+# Definimos los conjuntos
 fruits = {'banana', 'orange', 'mango', 'lemon'}
-vegetables = {'tomato', 'potato', 'cabbage','onion', 'carrot'}
-print(fruits.union(vegetables)) # {'lemon', 'carrot', 'tomato', 'banana', 'mango', 'orange', 'cabbage', 'potato', 'onion'}
+vegetables = {'tomato', 'potato', 'cabbage', 'onion', 'carrot'}
+
+# Usamos union para combinar los conjuntos
+combined = fruits.union(vegetables)
+
+# Mostramos el resultado
+print(combined)  
+# Salida: {'lemon', 'carrot', 'tomato', 'banana', 'mango', 'orange', 'cabbage', 'potato', 'onion'}
 ```
 
 - update()

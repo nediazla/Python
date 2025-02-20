@@ -187,11 +187,21 @@ print('key5' in dct) # False
 
 ```python
 # syntax
-dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
-dct.pop('key1') # removes key1 item
-dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
-dct.popitem() # removes the last item
-del dct['key2'] # removes key2 item
+# Ejemplo 1: Eliminar un par clave-valor específico con pop()
+dct = {'key1': 'value1', 'key2': 'value2', 'key3': 'value3', 'key4': 'value4'}
+dct.pop('key1')  # Elimina el par clave-valor con 'key1'
+print(dct)  # {'key2': 'value2', 'key3': 'value3', 'key4': 'value4'}
+
+# Ejemplo 2: Eliminar el último par clave-valor con popitem()
+dct = {'key1': 'value1', 'key2': 'value2', 'key3': 'value3', 'key4': 'value4'}
+dct.popitem()  # Elimina el último par clave-valor ('key4': 'value4')
+print(dct)  # {'key1': 'value1', 'key2': 'value2', 'key3': 'value3'}
+
+# Ejemplo 3: Eliminar una clave con del
+dct = {'key1': 'value1', 'key2': 'value2', 'key3': 'value3', 'key4': 'value4'}
+del dct['key2']  # Elimina el par clave-valor con 'key2'
+print(dct)  # {'key1': 'value1', 'key3': 'value3', 'key4': 'value4'}
+
 ```
 
 **Ejemplo:**
