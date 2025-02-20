@@ -37,43 +37,43 @@ empty_list = [] # this is an empty list, no item in the list
 print(len(empty_list)) # 0
 ```
 
-Lists with initial values. We use *len()* to find the length of a list.
+Listas con valores iniciales. Usamos *len()* para encontrar la longitud de una lista.
 
 ```python
 fruits = ['banana', 'orange', 'mango', 'lemon'] 
-vegetables = ['Tomato', 'Potato', 'Cabbage','Onion', 'Carrot'] 
+vegetables = ['Tomato', 'Potato', 'Cabbage', 'Onion', 'Carrot'] 
 animal_products = ['milk', 'meat', 'butter', 'yoghurt']  
-productsweb_techs = ['HTML', 'CSS', 'JS', 'React','Redux', 'Node', 'MongDB'] 
+web_techs = ['HTML', 'CSS', 'JS', 'React', 'Redux', 'Node', 'MongoDB'] 
 countries = ['Espana', 'Estonia', 'Denmark', 'Sweden', 'Norway']
 
 print('Number of fruits:', len(fruits))
 print('Vegetables:', vegetables)
 print('Number of vegetables:', len(vegetables))
-print('Animal products:',animal_products)
+print('Animal products:', animal_products)
 print('Number of animal products:', len(animal_products))
-print('Web technologies:', web_techs)
-print('Number of web technologies:', len(web_techs))
+print('Web technologies:', web_techs)  # Corregido el nombre aquí
+print('Number of web technologies:', len(web_techs))  # Corregido el nombre aquí
 print('Countries:', countries)
 print('Number of countries:', len(countries))
 ```
 
-```bash
-outputFruits: ['banana', 'orange', 'mango', 'lemon']
+```python
+Fruits: ['banana', 'orange', 'mango', 'lemon']
 # Number of fruits: 4
 Vegetables: ['Tomato', 'Potato', 'Cabbage', 'Onion', 'Carrot']
 # Number of vegetables: 5
 Animal products: ['milk', 'meat', 'butter', 'yoghurt']
 # Number of animal products: 4
-Web technologies: ['HTML', 'CSS', 'JS', 'React', 'Redux', 'Node', 'MongDB']
+Web technologies: ['HTML', 'CSS', 'JS', 'React', 'Redux', 'Node', 'MongoDB']
 # Number of web technologies: 7
 Countries: ['Espana', 'Estonia', 'Denmark', 'Sweden', 'Norway']
 # Number of countries: 5
 ```
 
-- Lists can have items of different data types
+- Las listas pueden tener elementos de diferentes tipos de datos.
 
 ```python
- lst = ['Nelson', 250, True, {'country':'Espana', 'city':'Helsinki'}] # list containing different data types
+lst = ['Nelson', 250, True, {'country': 'Espana', 'city': 'Helsinki'}]
 ```
 
 ### Acceso a elementos de lista mediante indexación positiva
@@ -84,14 +84,23 @@ Accedemos a cada elemento de una lista mediante su índice. El índice de una li
 
 ```python
 fruits = ['banana', 'orange', 'mango', 'lemon']
-first_fruit = fruits[0] # we are accessing the first item using its index
-print(first_fruit)      # bananas
-econd_fruit = fruits[1]
-print(second_fruit)     # orange
+
+# Accediendo al primer elemento usando su índice
+first_fruit = fruits[0]
+print(first_fruit)  # banana
+
+# Accediendo al segundo elemento
+second_fruit = fruits[1]  # Corregido el nombre de la variable
+print(second_fruit)  # orange
+
+# Accediendo al último elemento directamente con su índice
 last_fruit = fruits[3]
-print(last_fruit) # lemon# Last index
+print(last_fruit)  # lemon
+
+# Accediendo al último elemento usando el índice calculado
 last_index = len(fruits) - 1
 last_fruit = fruits[last_index]
+print(last_fruit)  # lemon
 ```
 
 ### Acceso a elementos de lista mediante indexación negativa
@@ -123,29 +132,31 @@ print(rest)           # ['item4', 'item5']
 ```
 
 ```python
-# First Example
-fruits = ['banana', 'orange', 'mango', 'lemon','lime','apple']
+# Primer ejemplo de desempaquetado
+fruits = ['banana', 'orange', 'mango', 'lemon', 'lime', 'apple']
 first_fruit, second_fruit, third_fruit, *rest = fruits
-print(first_fruit)     # banana
-print(second_fruit)    # orange
-print(third_fruit)     # mango
-print(rest)           # ['lemon','lime','apple']
-# Second Example about unpacking 
-listfirst, second, third,*rest, tenth = [1,2,3,4,5,6,7,8,9,10]
-print(first)          # 1
+print(first_fruit)    # banana
+print(second_fruit)   # orange
+print(third_fruit)    # mango
+print(rest)           # ['lemon', 'lime', 'apple']
+
+# Segundo ejemplo de desempaquetado
+listfirst, second, third, *rest, tenth = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(listfirst)      # 1
 print(second)         # 2
 print(third)          # 3
-print(rest)           # [4,5,6,7,8,9]
+print(rest)           # [4, 5, 6, 7, 8, 9]
 print(tenth)          # 10
-# Third Example about unpacking 
-listcountries = ['Germany', 'France','Belgium','Sweden','Denmark','Espana','Norway','Iceland','Estonia']
+
+# Tercer ejemplo de desempaquetado
+countries = ['Germany', 'France', 'Belgium', 'Sweden', 'Denmark', 'Espana', 'Norway', 'Iceland', 'Estonia']
 gr, fr, bg, sw, *scandic, es = countries
-print(gr)
-print(fr)
-print(bg)
-print(sw)
-print(scandic)
-print(es)
+print(gr)        # Germany
+print(fr)        # France
+print(bg)        # Belgium
+print(sw)        # Sweden
+print(scandic)   # ['Denmark', 'Espana', 'Norway', 'Iceland']
+print(es)        # Estonia
 ```
 
 ### Segmentación de elementos de una lista
@@ -154,22 +165,48 @@ print(es)
 
 ```python
 fruits = ['banana', 'orange', 'mango', 'lemon']
-all_fruits = fruits[0:4] # it returns all the fruits
-# this will also give the same result as the one above
-all_fruits = fruits[0:] # if we don't set where to stop it takes all the rest
-orange_and_mango = fruits[1:3] # it does not include the first index
-orange_mango_lemon = fruits[1:]
-orange_and_lemon = fruits[::2] # here we used a 3rd argument, step. It will take every 2cnd item - ['banana', 'mango']
+
+# Acceder a todos los elementos de la lista
+all_fruits = fruits[0:4]  # Devuelve todos los elementos: ['banana', 'orange', 'mango', 'lemon']
+print(all_fruits)
+
+# Esto también devolverá todos los elementos de la lista
+all_fruits = fruits[0:]  # Si no se especifica el índice final, toma todos los elementos
+print(all_fruits)
+
+# Acceder a un subgrupo (de índice 1 a 3, sin incluir el índice 3)
+orange_and_mango = fruits[1:3]  # Devuelve ['orange', 'mango']
+print(orange_and_mango)
+
+# Acceder a los elementos desde el índice 1 hasta el final
+orange_mango_lemon = fruits[1:]  # Devuelve ['orange', 'mango', 'lemon']
+print(orange_mango_lemon)
+
+# Acceder a cada segundo elemento
+orange_and_lemon = fruits[::2]  # Devuelve ['banana', 'mango']
+print(orange_and_lemon)
 ```
 
 - Indexación negativa: podemos especificar un rango de índices negativos especificando el inicio, el final y el paso, el valor de retorno será una nueva lista.
 
 ```python
 fruits = ['banana', 'orange', 'mango', 'lemon']
-all_fruits = fruits[-4:] # it returns all the fruits
-orange_and_mango = fruits[-3:-1] # it does not include the last index,['orange', 'mango']
-orange_mango_lemon = fruits[-3:] # this will give starting from -3 to the end,['orange', 'mango', 'lemon']
-reverse_fruits = fruits[::-1] # a negative step will take the list in reverse order,['lemon', 'mango', 'orange', 'banana']
+
+# Acceder a todos los elementos desde el índice -4 hasta el final
+all_fruits = fruits[-4:]  # Devuelve ['banana', 'orange', 'mango', 'lemon']
+print(all_fruits)
+
+# Acceder a un subgrupo entre los índices -3 y -1 (sin incluir el último índice)
+orange_and_mango = fruits[-3:-1]  # Devuelve ['orange', 'mango']
+print(orange_and_mango)
+
+# Acceder a todos los elementos desde el índice -3 hasta el final
+orange_mango_lemon = fruits[-3:]  # Devuelve ['orange', 'mango', 'lemon']
+print(orange_mango_lemon)
+
+# Invertir la lista usando un paso negativo
+reverse_fruits = fruits[::-1]  # Devuelve ['lemon', 'mango', 'orange', 'banana']
+print(reverse_fruits)
 ```
 
 ### Modificación de listas
@@ -178,12 +215,19 @@ Una lista es una colección ordenada de elementos que se puede modificar o cambi
 
 ```python
 fruits = ['banana', 'orange', 'mango', 'lemon']
+
+# Cambiar el primer elemento
 fruits[0] = 'avocado'
-print(fruits)       #  ['avocado', 'orange', 'mango', 'lemon']
+print(fruits)  # ['avocado', 'orange', 'mango', 'lemon']
+
+# Cambiar el segundo elemento
 fruits[1] = 'apple'
-print(fruits)       #  ['avocado', 'apple', 'mango', 'lemon']
-last_index = len(fruits) - 1fruits[last_index] = 'lime'
-print(fruits)        #  ['avocado', 'apple', 'mango', 'lime']
+print(fruits)  # ['avocado', 'apple', 'mango', 'lemon']
+
+# Cambiar el último elemento
+last_index = len(fruits) - 1  # Calcular el índice del último elemento
+fruits[last_index] = 'lime'  # Cambiar el último elemento a 'lime'
+print(fruits)  # ['avocado', 'apple', 'mango', 'lime']
 ```
 
 ### Comprobación de elementos en una lista
@@ -192,8 +236,12 @@ Comprobación de un elemento para ver si es miembro de una lista mediante el ope
 
 ```python
 fruits = ['banana', 'orange', 'mango', 'lemon']
+
+# Verificar si 'banana' está en la lista
 does_exist = 'banana' in fruits
 print(does_exist)  # True
+
+# Verificar si 'lime' está en la lista
 does_exist = 'lime' in fruits
 print(does_exist)  # False
 ```
@@ -232,7 +280,7 @@ fruits.insert(3, 'lime')   # ['banana', 'orange', 'apple', 'lime', 'mango', 'lem
 print(fruits)
 ```
 
-### Eliminar elementos de una lista
+### Eliminar elementos de una lista ***
 
 El método remove elimina un elemento específico de una lista
 
@@ -279,14 +327,22 @@ del lst        # to delete the list completely
 
 ```python
 fruits = ['banana', 'orange', 'mango', 'lemon', 'kiwi', 'lime']
+
+# Eliminar el primer elemento de la lista
 del fruits[0]
-print(fruits)       # ['orange', 'mango', 'lemon', 'kiwi', 'lime']
+print(fruits)  # ['orange', 'mango', 'lemon', 'kiwi', 'lime']
+
+# Eliminar el segundo elemento (índice 1) de la lista
 del fruits[1]
-print(fruits)       # ['orange', 'lemon', 'kiwi', 'lime']
-del fruits[1:3]     # this deletes items between given indexes, so it does not delete the item with index 3!
-print(fruits)       # ['orange', 'lime']
+print(fruits)  # ['orange', 'lemon', 'kiwi', 'lime']
+
+# Eliminar un rango de elementos entre los índices 1 y 3 (sin incluir el índice 3)
+del fruits[1:3]  # Elimina 'lemon' y 'kiwi'
+print(fruits)  # ['orange', 'lime']
+
+# Eliminar la lista completa
 del fruits
-print(fruits)       # This should give: NameError: name 'fruits' is not defined
+print(fruits)  # Esto generará un error porque 'fruits' ya no está definida
 ```
 
 ### Borrado de elementos de la lista
@@ -330,15 +386,18 @@ Existen varias formas de unir o concatenar dos o más listas en Python.
 ```
 
 ```python
+# Concatenación de números enteros
 positive_numbers = [1, 2, 3, 4, 5]
 zero = [0]
-negative_numbers = [-5,-4,-3,-2,-1]
+negative_numbers = [-5, -4, -3, -2, -1]
 integers = negative_numbers + zero + positive_numbers
-print(integers) # [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5]
+print(integers)  # [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5]
+
+# Concatenación de frutas y verduras
 fruits = ['banana', 'orange', 'mango', 'lemon']
 vegetables = ['Tomato', 'Potato', 'Cabbage', 'Onion', 'Carrot']
 fruits_and_vegetables = fruits + vegetables
-print(fruits_and_vegetables ) # ['banana', 'orange', 'mango', 'lemon', 'Tomato', 'Potato', 'Cabbage', 'Onion', 'Carrot']
+print(fruits_and_vegetables)  # ['banana', 'orange', 'mango', 'lemon', 'Tomato', 'Potato', 'Cabbage', 'Onion', 'Carrot']
 ```
 
 - Unir mediante el método extend()
@@ -352,20 +411,25 @@ list1.extend(list2)
 ```
 
 ```python
+# Extender num1 con num2
 num1 = [0, 1, 2, 3]
-num2= [4, 5, 6]
+num2 = [4, 5, 6]
 num1.extend(num2)
-print('Numbers:', num1) # Numbers: [0, 1, 2, 3, 4, 5, 6]
-negative_numbers = [-5,-4,-3,-2,-1]
-positive_numbers = [1, 2, 3,4,5]
+print('Numbers:', num1)  # Numbers: [0, 1, 2, 3, 4, 5, 6]
+
+# Extender negative_numbers con zero y positive_numbers
+negative_numbers = [-5, -4, -3, -2, -1]
+positive_numbers = [1, 2, 3, 4, 5]
 zero = [0]
-negative_numbers.extend(zero)
-negative_numbers.extend(positive_numbers)
-print('Integers:', negative_numbers) # Integers: [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5]
+negative_numbers.extend(zero)  # Agrega el 0
+negative_numbers.extend(positive_numbers)  # Agrega los números positivos
+print('Integers:', negative_numbers)  # Integers: [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5]
+
+# Extender fruits con vegetables
 fruits = ['banana', 'orange', 'mango', 'lemon']
 vegetables = ['Tomato', 'Potato', 'Cabbage', 'Onion', 'Carrot']
-fruits.extend(vegetables)
-print('Fruits and vegetables:', fruits ) # Fruits and vegetables: ['banana', 'orange', 'mango', 'lemon', 'Tomato', 'Potato', 'Cabbage', 'Onion', 'Carrot']
+fruits.extend(vegetables)  # Agrega las verduras
+print('Fruits and vegetables:', fruits)  # Fruits and vegetables: ['banana', 'orange', 'mango', 'lemon', 'Tomato', 'Potato', 'Cabbage', 'Onion', 'Carrot']
 ```
 
 ### Conteo de elementos en una lista
@@ -394,8 +458,10 @@ lst.index(item)
 
 ```python
 fruits = ['banana', 'orange', 'mango', 'lemon']
-print(fruits.index('orange'))   # 1ages = [22, 19, 24, 25, 26, 24, 25, 24]
-print(ages.index(24))           # 2, the first occurrence
+print(fruits.index('orange'))  # 1
+
+ages = [22, 19, 24, 25, 26, 24, 25, 24]
+print(ages.index(24))  # 2        # 2, the first occurrence
 ```
 
 ### Invertir una lista
@@ -424,13 +490,23 @@ lst.sort()                # ascendinglst.sort(reverse=True)    # descending
 **Example:**
 
 ```python
+# Ordenar frutas alfabéticamente
 fruits = ['banana', 'orange', 'mango', 'lemon']
 fruits.sort()
-print(fruits)             # sorted in alphabetical order, ['banana', 'lemon', 'mango', 'orange']fruits.sort(reverse=True)
-print(fruits) # ['orange', 'mango', 'lemon', 'banana']ages = [22, 19, 24, 25, 26, 24, 25, 24]
+print(fruits)  # ['banana', 'lemon', 'mango', 'orange']
+
+# Ordenar frutas en orden descendente
+fruits.sort(reverse=True)
+print(fruits)  # ['orange', 'mango', 'lemon', 'banana']
+
+# Ordenar edades en orden ascendente
+ages = [22, 19, 24, 25, 26, 24, 25, 24]
 ages.sort()
-print(ages) #  [19, 22, 24, 24, 24, 25, 25, 26]ages.sort(reverse=True)
-print(ages) #  [26, 25, 25, 24, 24, 24, 22, 19]
+print(ages)  # [19, 22, 24, 24, 24, 25, 25, 26]
+
+# Ordenar edades en orden descendente
+ages.sort(reverse=True)
+print(ages)  # [26, 25, 25, 24, 24, 24, 22, 19]
 ```
 
 sorted(): returns the ordered list without modifying the original list
