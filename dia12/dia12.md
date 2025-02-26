@@ -300,5 +300,5 @@ Si eres bueno leyendo los tipos de error, podrás corregir tus errores rápidame
 
 🎉 ¡FELICITACIONES! 🎉
 
-[Estudiantes 2](estudiante.md)
+[Estudiantes 2](estudiante.py)
 
