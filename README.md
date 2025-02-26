@@ -13,7 +13,7 @@
 # [Dia 9 - Modulos](dia9/dia9.md)
 # [Dia 10 - listas y lambda](dia10/dia10.md)
 # [Dia 11 - higher order functions](dia11/dia11.md)
-# Dia 15
+# [Dia 12 - Errores](dia12/dia12.md)
 # Dia 16
 # Dia 17
 # Dia 18
