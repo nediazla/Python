@@ -90,7 +90,7 @@ print("time two:", time_two)
 
 Aquí se encuentran todos los símbolos de tiempo que utilizamos para dar formato a la hora. Un ejemplo de todos los formatos de este módulo
 
-![](30-Days-Of-Pythonimagesstrftime.png)
+![](img/dia13.png)
 
 ## strftime
 
@@ -210,4 +210,4 @@ print("t3 =", t3)
 
 🎉 ¡FELICITACIONES! 🎉
 
-[Tareas](tareas.py)
+[Tareas](laboratorios/tareas.py)

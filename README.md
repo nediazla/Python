@@ -11,10 +11,10 @@
 
 # [Dia 8 - Funciones](dia8.md) 
 # [Dia 9 - Modulos](dia9/dia9.md)
-# [Dia 10 - listas y lambda](dia10/dia10.md)
-# [Dia 11 - funciones de orden superior](dia11/dia11.md)
-# [Dia 12 - Errores](dia12/dia12.md)
-# [Dia 13 - fecha y hora](dia13/dia13.md)
+# [Dia 10 - listas y lambda](dia10.md)
+# [Dia 11 - funciones de orden superior](dia11.md)
+# [Dia 12 - Errores](dia12.md)
+# [Dia 13 - fecha y hora](dia13.md)
 # Dia 17
 # Dia 18
 # Dia 10
