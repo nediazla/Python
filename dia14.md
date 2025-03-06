@@ -6,7 +6,7 @@ Python utiliza *try* y *except* para manejar los errores con elegancia. Una sali
 
 Hemos cubierto los diferentes tipos de *error* de Python en la sección anterior. Si usamos *try* y *except* en nuestro programa, entonces no generará errores en esos bloques.
 
-![](30-Days-Of-Pythonimagestry_except.png)
+![](img/30-Days-Of-Pythonimagestry_except.png)
 
 Probar y aceptar
 
