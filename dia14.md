@@ -167,8 +167,8 @@ print(one, middle, last)      #  1 [2, 3, 4, 5, 6] 7
 def unpacking_person_info(name, country, city, age):
     return f'{name} lives in {country}, {city}. He is {age} year old.'
 
-dct = {'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'age': 250}
-print(unpacking_person_info(**dct))  # Asabeneh lives in Finland, Helsinki. He is 250 years old.
+dct = {'name': 'Nelson', 'country': 'Espana', 'city': 'Caceres', 'age': 250}
+print(unpacking_person_info(**dct))  
 ```
 
 ### Empaquetado

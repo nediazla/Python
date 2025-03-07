@@ -15,17 +15,7 @@
 # [Dia 11 - funciones de orden superior](dia11.md)
 # [Dia 12 - Errores](dia12.md)
 # [Dia 13 - fecha y hora](dia13.md)
-# Dia 17
-# Dia 18
-# Dia 10
-# Dia 20 -
-# Dia 21 -
-# Dia 22 -
-# Dia 23 -
-# Dia 24 -
-# Dia 25 -
-# Dia 26 -
-# Dia 27 -
-# Dia 28 -
-# Dia 29 -
-# Dia 30 - 
+# [Dia 14 - Manejo de Excepiones](dia14.md)
+# Dia 15 -
+# Dia 16 -
+# Dia 17 -
