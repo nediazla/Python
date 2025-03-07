@@ -127,8 +127,11 @@ Tomemos como ejemplo lo siguiente. Solo se necesitan argumentos, pero tenemos un
 ```python
 def sum_of_five_nums(a, b, c, d, e):
     return a + b + c + d + e
+
 lst = [1, 2, 3, 4, 5]
-print(sum_of_five_nums(lst)) # TypeError: sum_of_five_nums() missing 4 required positional arguments: 'b', 'c', 'd', and 'e'
+
+# Desempaquetando la lista para pasar los valores individualmente
+print(sum_of_five_nums(*lst))  # Esto imprimirá: 15
 ```
 
 Cuando ejecutamos este código, se genera un error porque esta función toma números (no una lista) como argumentos. Descomprimamos/desestructuremos la lista.
@@ -136,8 +139,9 @@ Cuando ejecutamos este código, se genera un error porque esta función toma nú
 ```python
 def sum_of_five_nums(a, b, c, d, e):
     return a + b + c + d + e
+
 lst = [1, 2, 3, 4, 5]
-print(sum_of_five_nums(*lst))  # 15
+print(sum_of_five_nums(*lst))  # Esto imprimirá: 15
 ```
 
 También podemos utilizar la función de desempaquetado en el rango incorporado que espera un inicio y un final.
@@ -154,11 +158,15 @@ print(list(numbers))  # [2, 3, 4, 5, 6]
 Una lista o una tupla también se puede descomprimir de la siguiente manera:
 
 ```python
+# Lista de países
 countries = ['Finland', 'Sweden', 'Norway', 'Denmark', 'Iceland']
 fin, sw, nor, *rest = countries
-print(fin, sw, nor, rest)   # Finland Sweden Norway ['Denmark', 'Iceland']numbers = [1, 2, 3, 4, 5, 6, 7]
+print(fin, sw, nor, rest)  # Esperado: Finland Sweden Norway ['Denmark', 'Iceland']
+
+# Lista de números
+numbers = [1, 2, 3, 4, 5, 6, 7]
 one, *middle, last = numbers
-print(one, middle, last)      #  1 [2, 3, 4, 5, 6] 7
+print(one, middle, last)  # Esperado: 1 [2, 3, 4, 5, 6] 7
 ```
 
 ### Desempaquetando diccionarios
@@ -168,7 +176,7 @@ def unpacking_person_info(name, country, city, age):
     return f'{name} lives in {country}, {city}. He is {age} year old.'
 
 dct = {'name': 'Nelson', 'country': 'Espana', 'city': 'Caceres', 'age': 250}
-print(unpacking_person_info(**dct))  
+print(unpacking_person_info(**dct))  # Esto imprimirá: Nelson lives in Espana, Caceres. He is 250 year old.
 ```
 
 ### Empaquetado
@@ -192,14 +200,20 @@ print(sum_all(1, 2, 3, 4, 5, 6, 7)) # 28
 
 ```python
 def packing_person_info(**kwargs):
-    # check the type of kwargs and it is a dict type
-    print(type(kwargs))  # Printing dictionary items
-    for key in kwargs:
-        print(f"{key} = {kwargs[key]}")
-    return kwargs
+    # Verificar si kwargs es un diccionario (aunque siempre lo será, es una buena práctica confirmarlo)
+    if isinstance(kwargs, dict):
+        print(f"Tipo de kwargs: {type(kwargs)}")  # Imprime el tipo de kwargs
+        # Iterar sobre el diccionario y mostrar cada clave y su valor correspondiente
+        for key, value in kwargs.items():
+            print(f"{key} = {value}")
+    else:
+        print("Error: Se esperaba un diccionario.")
 
-print(packing_person_info(name="Asabeneh",
-                          country="Finland", city="Helsinki", age=250))
+    return kwargs  # Retorna el diccionario kwargs
+
+# Llamada a la función con datos de ejemplo
+print(packing_person_info(name="Nelson", country="Finland", city="Helsinki", age=250))
+
 ```
 
 ## Propagación en Python
