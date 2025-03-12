@@ -527,3 +527,5 @@ distance = 8 -(-12) # 20
     
 
 🎉¡FELICIDADES! 🎉
+
+[Calculadora](laboratorios/calculadora.py)
