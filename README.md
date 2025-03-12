@@ -16,6 +16,6 @@
 # [Dia 12 - Errores](dia12.md)
 # [Dia 13 - fecha y hora](dia13.md)
 # [Dia 14 - Manejo de Excepiones](dia14.md)
-# Dia 15 -
+# [Dia 15 - Expresiones Regulares](dia15.md)
 # Dia 16 -
 # Dia 17 -
