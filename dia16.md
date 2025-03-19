@@ -28,8 +28,6 @@ También puedes combinar algunos de estos modos. Por ejemplo:
 - **`'wb'`**: Abre el archivo en modo binario y en formato escritura.
 - '**`a+'`**: Abre el archivo para leer y escribir (en modo de anexado).
 
-### 
-
 ### Apertura de archivos para lectura
 
 El modo predeterminado de *abrir* es lectura, por lo que no tenemos que especificar 'r' o 'rt'. He creado y guardado un archivo llamado reading_file_example.txt en el directorio de archivos. Veamos cómo se hace:
@@ -39,6 +37,13 @@ f = open('./files/reading_file_example.txt', 'r')  # Abrir el archivo en modo le
 print(f)  # <_io.TextIOWrapper name='./files/reading_file_example.txt' mode='r' encoding='UTF-8'>
 f.close()  # Cerrar el archivo después de usarlo
 
+```
+
+en caso de dar error aplicar decodificador: 
+```python
+with open('donald_speech.txt', 'r', encoding='cp1252') as file:  
+    contenido = file.read()  
+    print(contenido)
 ```
 
 Como puede ver en el ejemplo anterior, imprimí el archivo abierto y me brindó información al respecto. El archivo abierto tiene diferentes métodos de lectura: *read()*, *readline*, *readlines*. Un archivo abierto debe cerrarse con el método *close()*.
@@ -102,6 +107,16 @@ with open('./files/reading_file_example.txt', 'r') as f:  # Abrir el archivo en 
     print(lines)  # Imprimir las líneas leídas del archivo
 ```
 
+
+contar lineas
+```python
+# Abre el archivo en modo lectura
+with open('archivo.txt', 'r', encoding='cp1252') as file:
+    # Cuenta las líneas
+    num_lineas = sum(1 for line in file)
+
+print(f'El archivo tiene {num_lineas} líneas.')
+```
 ### Apertura de archivos para escritura y actualización
 
 Para escribir en un archivo existente, debemos agregar un modo como parámetro a la función *open()*:
@@ -292,7 +307,8 @@ Para leer archivos excel necesitamos instalar el paquete *xlrd*. Cubriremos esto
 
 ```python
 import xlrd
-excel_book = xlrd.open_workbook('sample.xls)print(excel_book.nsheets)
+excel_book = xlrd.open_workbook('sample.xls)
+print(excel_book.nsheets)
 print(excel_book.sheet_names)
 ```
 

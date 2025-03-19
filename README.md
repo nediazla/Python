@@ -17,5 +17,5 @@
 # [Dia 13 - fecha y hora](dia13.md)
 # [Dia 14 - Manejo de Excepiones](dia14.md)
 # [Dia 15 - Expresiones Regulares](dia15.md)
-# Dia 16 -
-# Dia 17 -
+# [Dia 16 - Manejo de archivos](dia16.md)
+# [Dia 17 - Administrador de paquetes](dia17.md)

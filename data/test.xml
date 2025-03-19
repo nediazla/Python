@@ -1,0 +1,11 @@
+<?xml version="1.0"?>  <!-- Declaración XML que especifica la versión del XML -->
+<person gender="female">  <!-- Elemento principal 'person' con un atributo 'gender' -->
+  <name>Nelson</name>  <!-- Elemento 'name' que contiene el valor 'Nelson' -->
+  <country>Spain</country>  <!-- Elemento 'country' con el valor 'Spain' -->
+  <city>Helsinki</city>  <!-- Elemento 'city' con el valor 'Helsinki' -->
+  <skills>  <!-- Elemento 'skills' que contiene varios subelementos 'skill' -->
+    <skill>JavaScript</skill>  <!-- Elemento 'skill' con el valor 'JavaScript' -->
+    <skill>React</skill>  <!-- Elemento 'skill' con el valor 'React' -->
+    <skill>Python</skill>  <!-- Elemento 'skill' con el valor 'Python' -->
+  </skills>
+</person>
