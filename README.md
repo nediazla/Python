@@ -19,3 +19,5 @@
 # [Dia 15 - Expresiones Regulares](dia15.md)
 # [Dia 16 - Manejo de archivos](dia16.md)
 # [Dia 17 - Administrador de paquetes](dia17.md)
+# [Dia 18 - Clases y Objetos](dia18.md)
+# [Dia 19 - Web scraping](dia19.md)
