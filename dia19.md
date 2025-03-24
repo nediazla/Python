@@ -44,10 +44,6 @@ except requests.exceptions.RequestException as e:
     print(f"Hubo un error al realizar la solicitud: {e}")
 ```
 
-```sh
-200
-```
-
 Usando beautifulSoup para analizar el contenido de la página
 
 ```python
