@@ -283,5 +283,3 @@ You have lived for 3153600000 seconds.
 ```
 
 🎉¡FELICIDADES! 🎉
-
-[Clase](https://youtu.be/3vdzRf1U7wM?si=xkA6b__gF1ylZRLX)

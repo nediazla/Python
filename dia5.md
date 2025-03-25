@@ -586,5 +586,3 @@ ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
 3. [‘China’, ‘Rusia’, ‘EE. UU.’, ‘España’, ‘Suecia’, ‘Noruega’, ‘Dinamarca’]. Desglosa los tres primeros países y el resto como países escandinavos.
 
 🎉 ¡FELICIDADES! 🎉
-
-[Clase](https://youtu.be/21h5XtHED14)

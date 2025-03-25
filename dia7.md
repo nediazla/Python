@@ -418,5 +418,3 @@ The sum of all numbers is 5050.
 6. Encuentra los 10 países más poblados del mundo
 
 🎉 ¡FELICITACIONES! 🎉
-
-[Clase](https://youtu.be/jkdqa815k6o)

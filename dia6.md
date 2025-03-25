@@ -256,5 +256,3 @@ Si una fruta no existe en la lista, agréguela a la lista e imprima la lista mod
 ```
 
 🎉¡FELICIDADES! 🎉
-
-[Clase](https://youtu.be/tt6-e-nMQqM)

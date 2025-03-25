@@ -351,3 +351,5 @@ Frequency Distribution: [(20.0, 26), (16.0, 27), (12.0, 32), (8.0, 37), (8.0, 34
 1. Cree una clase llamada CuentaPersona. Tiene las propiedades nombre, apellidos, ingresos, gastos y los métodos total_ingresos, total_gastos, información_cuenta, añadir_ingresos, añadir_gastos y saldo_cuenta. Ingresos es un conjunto de ingresos y su descripción. Lo mismo ocurre con los gastos.
 
 🎉 ¡ENHORABUENA! 🎉
+
+[Tetris](laboratorios/tetris.py)
