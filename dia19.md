@@ -84,3 +84,5 @@ Para consultar la documentación de beautifulsoup, consulta la documentación de
 2. Extraiga la tabla de presidentes y guarde los datos como JSON (https://en.wikipedia.org/wiki/List_of_presidents_of_the_United_States). La tabla no está muy estructurada y la extracción puede tardar mucho tiempo.
 
 🎉 ¡FELICIDADES! 🎉
+
+[Noticias](laboratorios/noticias.py)
