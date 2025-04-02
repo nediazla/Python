@@ -1,11 +1,15 @@
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
 
-np_normal = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
-print(np_normal)
-print('min: ', np.amin(np_normal, axis=0))
-print('max: ', np.amax(np_normal, axis=0))
-print('min: ', np.amin(np_normal, axis=1))
-print('max: ', np.amax(np_normal, axis=1))
 
+# Lista de datos: cada sublista contiene información de una persona: [Nombre, País, Ciudad]
+data = [
+    ['Asabeneh', 'Finland', 'Helsink'],  # Nota: "Helsink" podría ser un error tipográfico, normalmente se escribe "Helsinki"
+    ['David', 'UK', 'London'],
+    ['John', 'Sweden', 'Stockholm']
+]
+
+# Creación de un DataFrame de pandas a partir de la lista de datos
+# Se especifican los nombres de las columnas: 'Names', 'Country' y 'City'
+df = pd.DataFrame(data, columns=['Names', 'Country', 'City'])
+
+# Imprime el DataFrame resultante
+print(df)
