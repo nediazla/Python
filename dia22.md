@@ -38,27 +38,27 @@ Veamos un ejemplo de una serie:
 
 Nombres: Pandas Series
 
-![](30-Days-Of-Pythonimagespandas-series-1.png)
+![](img/30-Days-Of-Pythonimagespandas-series-1.png)
 
 Countries Series
 
-![](30-Days-Of-Pythonimagespandas-series-2.png)
+![](img/30-Days-Of-Pythonimagespandas-series-2.png)
 
 Cities Series
 
-![](30-Days-Of-Pythonimagespandas-series-3.png)
+![](img/30-Days-Of-Pythonimagespandas-series-3.png)
 
 Como puede ver, la serie de Pandas es solo una columna de datos. Si queremos tener varias columnas, usamos marcos de datos. El siguiente ejemplo muestra marcos de datos de Pandas.
 
 Veamos un ejemplo de un marco de datos de Pandas:
 
-![](30-Days-Of-Pythonimagespandas-dataframe-1.png)
+![](img/30-Days-Of-Pythonimagespandas-dataframe-1.png)
 
 Marco de datos de Pandas
 
 Un marco de datos es un conjunto de filas y columnas. Observe la tabla a continuación; tiene muchas más columnas que el ejemplo anterior:
 
-![](30-Days-Of-Pythonimagespandas-dataframe-2.png)
+![](img/30-Days-Of-Pythonimagespandas-dataframe-2.png)
 
 ## Marco de datos de Pandas
 
