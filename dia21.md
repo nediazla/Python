@@ -819,7 +819,7 @@ print('Second column: ', np_list[:,1])
 print('Third column: ', np_list[:,2])
 ```
 
-Funciones estadísticas de NumPy con ejemplo
+## Funciones estadísticas de NumPy con ejemplo
 
 NumPy cuenta con funciones estadísticas muy útiles para calcular el mínimo, el máximo, la media, la mediana, el percentil, la desviación estándar, la varianza, etc., de los elementos dados en el array.
 Las funciones se explican a continuación:
