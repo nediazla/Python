@@ -21,3 +21,6 @@
 # [Dia 17 - Administrador de paquetes](dia17.md)
 # [Dia 18 - Clases y Objetos](dia18.md)
 # [Dia 19 - Web scraping](dia19.md)
+# [Dia 20 - Virtual Environments](dia20.md)
+# [Dia 21 - Python para Análisis Estadístico](dia21.md)
+# [Dia 22 - Pandas](dia22.md)

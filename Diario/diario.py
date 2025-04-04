@@ -1,15 +1,39 @@
+import pandas as pd
+import numpy as np
 
-
-# Lista de datos: cada sublista contiene información de una persona: [Nombre, País, Ciudad]
 data = [
-    ['Asabeneh', 'Finland', 'Helsink'],  # Nota: "Helsink" podría ser un error tipográfico, normalmente se escribe "Helsinki"
-    ['David', 'UK', 'London'],
-    ['John', 'Sweden', 'Stockholm']
+    {"Name": "Nelson", "Country": "Espana", "City": "Caceres"},
+    {"Name": "David", "Country": "UK", "City": "London"},
+    {"Name": "John", "Country": "Sweden", "City": "Stockholm"}
 ]
 
-# Creación de un DataFrame de pandas a partir de la lista de datos
-# Se especifican los nombres de las columnas: 'Names', 'Country' y 'City'
-df = pd.DataFrame(data, columns=['Names', 'Country', 'City'])
+df = pd.DataFrame(data)
 
-# Imprime el DataFrame resultante
+wights = [74, 78, 69]
+heights = [179, 175, 169]
+df['Weight'] = wights
+df['Height'] = heights
+df['Height'] = df['Height'] * 0.01
+
+def calcular_bmi():
+    weights = df['Weight']
+    heights = df['Height']
+    bmi = []
+    for w, h in zip(weights, heights):
+        b  = w / (h * h)
+        bmi.append(b)
+    return bmi
+bmi = calcular_bmi()
+df['BMI'] = bmi
+df['BMI'] = round(df['BMI'], 1)
+
+birth_years = [1982, 1985, 1990]
+current_years = 2025
+
+df['Birth Year'] = birth_years
+
+df['Birth Year'] = pd.to_numeric(df['Birth Year'])
+
+df['Age'] = current_years - df['Birth Year']
+
 print(df)

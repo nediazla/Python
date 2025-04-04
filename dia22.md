@@ -54,7 +54,7 @@ Veamos un ejemplo de un marco de datos de Pandas:
 
 ![](img/30-Days-Of-Pythonimagespandas-dataframe-1.png)
 
-Marco de datos de Pandas
+## Marco de datos de Pandas
 
 Un marco de datos es un conjunto de filas y columnas. Observe la tabla a continuación; tiene muchas más columnas que el ejemplo anterior:
 
@@ -225,7 +225,7 @@ print(df)
 Para descargar el archivo CSV, en este ejemplo, basta con usar la consola o la línea de comandos:
 
 ```bash
-curl -O https://raw.githubusercontent.com/nediazla/Python/refs/heads/main/data/weight-height.csv
+https://raw.githubusercontent.com/nediazla/Python/refs/heads/main/data/weight-height.csv
 ```
 
 Coloque el archivo descargado en su directorio de trabajo.
@@ -240,7 +240,7 @@ df = pd.read_csv('weight-height.csv')
 print(df)
 ```
 
-Exploración de datos
+## Exploración de datos
 
 Leamos solo las primeras 5 filas usando head()
 
