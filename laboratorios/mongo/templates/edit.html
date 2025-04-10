@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Editar estudiante</title>
+</head>
+<body>
+    <h1>Editar estudiante</h1>
+    <form method="post">
+        <label>Nombre:</label><br>
+        <input type="text" name="name" value="{{ student.name }}" required><br><br>
+        <label>País:</label><br>
+        <input type="text" name="country" value="{{ student.country }}" required><br><br>
+        <label>Ciudad:</label><br>
+        <input type="text" name="city" value="{{ student.city }}" required><br><br>
+        <label>Edad:</label><br>
+        <input type="number" name="age" value="{{ student.age }}" required><br><br>
+        <button type="submit">Guardar cambios</button>
+    </form>
+    <br>
+    <a href="{{ url_for('home') }}">⬅ Volver al inicio</a>
+</body>
+</html>

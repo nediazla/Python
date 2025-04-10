@@ -24,3 +24,4 @@
 # [Dia 20 - Virtual Environments](dia20.md)
 # [Dia 21 - Python para Análisis Estadístico](dia21.md)
 # [Dia 22 - Pandas](dia22.md)
+# [Dia 23](dia23.md)

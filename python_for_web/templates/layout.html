@@ -8,9 +8,9 @@
         rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     {% if title %}
-    <title>30 Days of Python - {{ title}}</title>
+    <title>Class of Python - {{ title}}</title>
     {% else %}
-    <title>30 Days of Python</title>
+    <title>Class of Python</title>
     {% endif %}
 </head>
 
@@ -18,7 +18,7 @@
     <header>
         <div class="menu-container">
             <div>
-                <a class="brand-name nav-link" href="/">30DaysOfPython</a>
+                <a class="brand-name nav-link" href="/">ClassOfPython</a>
             </div>
             <ul class="nav-lists">
                 <li class="nav-list"><a class="nav-link active" href="{{ url_for('home') }}">Home</a></li>
