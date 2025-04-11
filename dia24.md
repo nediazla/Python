@@ -733,3 +733,5 @@ def edit_student(id):
 ## 💻 Exercises: Day 24
 
 🎉 Felicidades! 🎉
+
+Laboratorio [Mongo](/laboratorios/mongo/app.py)
