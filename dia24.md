@@ -14,38 +14,37 @@ MongoDB es una base de datos NoSQL. Almacena datos en un documento JSON, lo que 
 
 En esta sección, nos centraremos en MongoDB, una base de datos NoSQL. Regístrese en [mongoDB](https://www.mongodb.com/) haciendo clic en el botón de inicio de sesión y luego en "Registrarse" en la página siguiente.
 
-![[Pasted image 20250409111303.png]]
-
+![](img/20250409111303.png)
 Páginas de registro de MongoDB
 
 Complete los campos y haga clic en Continuar.
 
-![[Pasted image 20250409111330.png]]
+![](img/20250409111330.png)
 
 Personalice su entorno
-![[Pasted image 20250409111546.png]]
+![](img/20250409111546.png)
 
 Registro en MongoDB
 
 Selecciona el plan gratuito
 
-![[Pasted image 20250409111625.png]]
+![](img/20250409111625.png)
 
 Plan gratuito de MongoDB
 
 Seleccione la región gratuita más cercana y asigne un nombre a su clúster.
 
-![[Pasted image 20250409111646.png]]
+![](img/20250409111646.png)
 
 Nombre del clúster de MongoDB
 
 Ahora se ha creado un entorno de pruebas gratuito. seleccione el tipo de conexion (Drivers)
 
-![[Pasted image 20250409112012.png]]
+![](img/20250409112012.png)
 
 ### Obtención de la cadena de conexión (URI de MongoDB)
 
-![[Pasted image 20250409112048.png]]
+![](img/20250409112048.png)
 
 Copia el enlace de la cadena de conexión y obtendrás algo similar a esto:
 
