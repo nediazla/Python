@@ -49,7 +49,7 @@ Ahora se ha creado un entorno de pruebas gratuito. seleccione el tipo de conexio
 Copia el enlace de la cadena de conexión y obtendrás algo similar a esto:
 
 ```bash
-'mongodb+srv://xnoxos:47jMJ0XFmnvYU6SL@cluster0.ly2wqrf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
+'mongodb+srv://xnoxos:<password>@cluster0.ly2wqrf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
 ```
 
 No te preocupes por la URL, es un medio para conectar tu aplicación con MongoDB.
