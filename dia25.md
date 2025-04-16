@@ -24,6 +24,7 @@ Una API RESTful sigue el estilo REST, usando métodos HTTP estándar para intera
 
 1. El **cliente** (navegador o app) hace una solicitud HTTP.
 2. El **servidor** responde con un código de estado (ej: 200 OK) y datos si corresponde.
+3. códigos de status. referencia: https://developer.mozilla.org/es/docs/Web/HTTP/Reference/Status
 
 ---
 
