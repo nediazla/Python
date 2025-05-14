@@ -43,8 +43,9 @@ else:
 count = 0
 while count < 5:
     print(count)
-    count = count + 1else:
-    print(count)
+    count = count + 1
+else:
+	print(count)
 ```
 
 La condición de bucle anterior será falsa cuando el conteo sea 5 y el bucle se detenga y la ejecución inicie la instrucción else. Como resultado, se imprimirá 5.
