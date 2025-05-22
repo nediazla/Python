@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inventario</title>
+</head>
+<body>
+    <h2>Inventario de Productos</h2>
+
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Stock</th>
+        </tr>
+        {% for p in productos %}
+        <tr>
+            <td>{{ p[0] }}</td>
+            <td>{{ p[1] }}</td>
+            <td>{{ p[2] }}</td>
+            <td>{{ p[3] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <h3>Agregar nuevo producto</h3>
+    <form action="/agregar_producto" method="POST">
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <input type="number" name="precio" placeholder="Precio" required>
+        <input type="number" name="stock" placeholder="Stock" required>
+        <button type="submit">Agregar</button>
+    </form>
+</body>
+</html>

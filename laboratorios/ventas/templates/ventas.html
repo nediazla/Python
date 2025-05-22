@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ventas</title>
+</head>
+<body>
+    <h2>Realizar Venta</h2>
+    <form action="/realizar_venta" method="POST">
+        <label for="producto_id">Producto:</label>
+        <select name="producto_id" required>
+            {% for p in productos %}
+                <option value="{{ p[0] }}">{{ p[1] }} - {{ p[2] }} € (Stock: {{ p[3] }})</option>
+            {% endfor %}
+        </select><br><br>
+
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" name="cantidad" required><br><br>
+
+        <button type="submit">Vender</button>
+    </form>
+</body>
+</html>

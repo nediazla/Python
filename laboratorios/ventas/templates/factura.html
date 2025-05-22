@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Factura</title>
+</head>
+<body>
+    <h2>Factura</h2>
+    <p>Producto: {{ nombre }}</p>
+    <p>Cantidad: {{ cantidad }}</p>
+    <p>Precio: {{ precio }}</p>
+    <p>Total: {{ total }}</p>
+
+    <button onclick="window.print()">Imprimir</button>
+    <br><br>
+    <a href="/ventas">Volver</a>
+</body>
+</html>
